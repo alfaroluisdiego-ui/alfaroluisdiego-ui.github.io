@@ -1,451 +1,1134 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="es-CR">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Admisible · Ofertas listas para firmar</title>
-<meta name="description" content="Ofertas listas para firmar en SICOP. Completas, a tiempo y admisibles. Usted decide el precio y firma; lo demás llega hecho.">
+
+<title>Admisible · Ofertas listas para firmar en SICOP</title>
+<meta name="description" content="Preparamos su oferta para los concursos de SICOP en Costa Rica: completa, a tiempo y admisible. Usted pone el precio y firma.">
 <link rel="canonical" href="https://admisible.com/">
+
+<link rel="preload" href="archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+<link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="64x64" href="favicon-64.png">
 <link rel="apple-touch-icon" href="icono-512.png">
-<meta property="og:title" content="Admisible · Ofertas listas para firmar">
-<meta property="og:description" content="De cada dos ofertas que las empresas presentan al Estado, una queda fuera antes de que concurse por precio. Nosotros le entregamos la suya completa, a tiempo y admisible.">
+
+<meta property="og:title" content="Admisible · Ofertas listas para firmar en SICOP">
+<meta property="og:description" content="De cada dos ofertas que las empresas presentan al Estado, una queda fuera antes de concursar por precio. Le entregamos la suya completa, a tiempo y admisible.">
 <meta property="og:image" content="https://admisible.com/logo-og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Admisible, ofertas listas para firmar">
-<meta property="og:url" content="https://admisible.com">
+<meta property="og:url" content="https://admisible.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Admisible">
 <meta property="og:locale" content="es_CR">
+
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Admisible · Ofertas listas para firmar en SICOP">
+<meta name="twitter:description" content="Preparamos su oferta para los concursos de SICOP en Costa Rica: completa, a tiempo y admisible.">
+<meta name="twitter:image" content="https://admisible.com/logo-og.png">
+<meta name="twitter:image:alt" content="Admisible, ofertas listas para firmar">
+
 <meta name="theme-color" content="#FFFFFF">
-<link rel="preload" href="archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://admisible.com/#admisible",
+  "name": "Admisible",
+  "alternateName": "Admisible, ofertas listas para firmar",
+  "description": "Preparamos ofertas completas y admisibles para los concursos de SICOP en Costa Rica. Revisamos el cartel, armamos los documentos y le entregamos la oferta lista para firmar.",
+  "url": "https://admisible.com/",
+  "image": "https://admisible.com/logo-og.png",
+  "logo": "https://admisible.com/icono-512.png",
+  "telephone": "+506 8668 9746",
+  "email": "alfaroluisdiego@admisible.com",
+  "inLanguage": "es-CR",
+  "currenciesAccepted": "CRC",
+  "areaServed": {
+    "@type": "Country",
+    "name": "Costa Rica"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "San José",
+    "addressRegion": "San José",
+    "addressCountry": "CR"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "07:00",
+      "closes": "18:00"
+    }
+  ],
+  "knowsLanguage": "es",
+  "serviceType": "Preparación de ofertas para compras públicas",
+  "sameAs": []
+}
+</script>
+
 <style>
-  @font-face { font-family: Archivo; src: url("archivo-latin.woff2") format("woff2"); font-weight: 400 900; font-stretch: 75% 125%; font-display: swap; }
-  :root {
-    --white: #FFFFFF; --tint: #EEF2F7; --ink: #17233A; --ink-2: #46546E;
-    --line: #C9D3E0; --line-2: #E3E9F1;
-    --navy: #1B365D; --navy-deep: #12263F; --navy-soft: #DCE5F1; --on-navy-2: #B9C8E0;
-    --red: #B3261E; --red-soft: #FBE9E7;
-    --navy-rgb: 27, 54, 93; --ink-rgb: 18, 38, 63;
-    --shadow: 0 12px 32px -14px rgba(var(--ink-rgb), .38), 0 2px 6px -2px rgba(var(--ink-rgb), .18);
-    --ease: cubic-bezier(.16, 1, .3, 1);
-    color-scheme: light;
+/* ===========================================================
+   admisible.com · Direccion B "La firma"
+   Una sola familia: Archivo variable autoalojada (wght 100..900, wdth 62..125).
+   Cinco escalones de escala. Campos a sangre + hojas de papel con canto.
+   =========================================================== */
+
+@font-face{
+  font-family:Archivo;
+  src:url("archivo-latin.woff2") format("woff2");
+  font-weight:100 900;
+  font-stretch:62% 125%;
+  font-display:swap;
+}
+
+:root{
+  /* superficies */
+  --blanco:#FFFFFF;
+  --papel:#F4F2ED;
+  --marino:#1B365D;
+  --marino-hondo:#12233F;
+  --marino-tinta:#0C1A30;
+  /* tinta */
+  --tinta:#1B1E24;
+  --tinta-2:#565A62;
+  --sobre-1:#FFFFFF;
+  --sobre-2:#BECDE4;
+  --sobre-3:#8FA3C2;
+  /* filetes y papel */
+  --linea:#E4E1DA;
+  --linea-blanca:#E6E8EC;
+  --filete-campo:rgba(255,255,255,.20);
+  --gris-barra:#D3CFC6;
+  --doblez:#D7D3CA;
+  --canto-sello:#35608F;
+  /* rojo: solo lo que quedo fuera */
+  --rojo:#B3261E;
+  --rojo-campo:#EF6152;
+
+  /* cinco escalones y la cifra */
+  --t-display:clamp(2.75rem,6.1vw,6rem);
+  --t-seccion:clamp(1.9rem,3.4vw,3rem);
+  --t-bajada:clamp(1.25rem,1.8vw,1.5rem);
+  --t-cuerpo:1.125rem;
+  --t-rotulo:0.875rem;
+  --t-cifra:clamp(4.5rem,8vw,8.5rem);
+
+  /* reticula y ritmo */
+  --canal:24px;
+  --margen:clamp(20px,4vw,40px);
+  --contenedor:1240px;
+  --seccion:clamp(64px,9vw,128px);
+  --cruce:clamp(96px,9vw,132px);
+  --portada-pb:clamp(28px,3vw,44px);
+  --hoja-pad:clamp(22px,2.6vw,34px);
+  --barra-alto:64px;
+  --riel-alto:28px;
+
+  /* sombra corta de dos capas, solo para el papel */
+  --papel-sombra:drop-shadow(0 1px 1px rgba(12,26,48,.16)) drop-shadow(0 10px 16px rgba(12,26,48,.18));
+  --papel-sombra-campo:drop-shadow(0 2px 2px rgba(6,14,28,.34)) drop-shadow(0 14px 22px rgba(6,14,28,.38));
+
+  --dur:140ms;
+  --curva:cubic-bezier(.22,1,.36,1);
+
+  accent-color:#1B365D;
+  scrollbar-color:#C9C5BC #F4F2ED;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:calc(var(--barra-alto) + var(--riel-alto) + 16px);scroll-behavior:smooth}
+body{
+  margin:0;
+  background:#FFFFFF;
+  color:#1B1E24;
+  font-family:Archivo,"Helvetica Neue",Arial,sans-serif;
+  font-size:var(--t-cuerpo);
+  line-height:1.6;
+  font-weight:400;
+  font-stretch:100%;
+  font-variant-numeric:tabular-nums;
+  -webkit-font-smoothing:antialiased;
+}
+::selection{background:#1B365D;color:#FFFFFF}
+:focus-visible{outline:2px solid #B3261E;outline-offset:2px}
+.campo :focus-visible,.pie :focus-visible{outline-color:#FFFFFF}
+img,svg{max-width:100%}
+h1,h2,h3,h4{margin:0}
+p{margin:0 0 1rem}
+p:last-child{margin-bottom:0}
+
+.oculto{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;border:0}
+
+/* ---------- escala ---------- */
+.display{
+  font-size:var(--t-display);line-height:1.02;letter-spacing:-.03em;
+  font-weight:680;font-stretch:100%;
+  font-variant-numeric:proportional-nums;text-wrap:balance;
+}
+.seccion-t{
+  font-size:var(--t-seccion);line-height:1.1;letter-spacing:-.022em;
+  font-weight:620;font-stretch:100%;text-wrap:balance;
+}
+.bajada{font-size:var(--t-bajada);line-height:1.5;letter-spacing:-.005em;font-weight:400}
+.menor{font-size:var(--t-rotulo);line-height:1.5}
+.rotulo{
+  font-size:var(--t-rotulo);line-height:1.35;letter-spacing:.08em;text-transform:uppercase;
+  font-weight:600;font-stretch:68%;
+}
+.cifra{
+  display:block;font-size:var(--t-cifra);line-height:1;letter-spacing:-.02em;
+  font-weight:620;font-stretch:66%;font-variant-numeric:proportional-nums;
+}
+.medida{max-width:52ch}
+.nodec{white-space:nowrap;font-variant-numeric:tabular-nums}
+strong,b{font-weight:680}
+
+/* ---------- reticula ---------- */
+.env{max-width:1240px;margin-left:auto;margin-right:auto;padding:0 20px}
+.rej{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:var(--canal)}
+.rej>*{min-width:0}
+.c1-5{grid-column:1/6}.c1-6{grid-column:1/7}.c1-7{grid-column:1/8}.c1-12{grid-column:1/13}
+.c6-13{grid-column:6/13}.c7-12{grid-column:7/13}.c7-11{grid-column:7/12}
+.c1-4{grid-column:1/5}.c5-12{grid-column:5/13}.c9-13{grid-column:9/13}.c1-8{grid-column:1/9}
+@media (max-width:1023px){
+  .rej{grid-template-columns:repeat(6,minmax(0,1fr))}
+  .c1-5,.c1-6,.c1-7,.c1-8,.c1-12,.c6-13,.c7-12,.c7-11,.c1-4,.c5-12,.c9-13{grid-column:1/-1}
+}
+@media (max-width:719px){.rej{grid-template-columns:minmax(0,1fr)}}
+
+.sec{padding:64px 0}
+.sec-papel{background:#F4F2ED}
+.campo{background:#1B365D;color:#FFFFFF}
+.campo-hondo{background:#12233F;color:#FFFFFF}
+.enc{margin-bottom:clamp(32px,4vw,56px);row-gap:24px}
+.enc .bajada{max-width:52ch}
+
+/* ---------- enlace de salto ---------- */
+.saltar{
+  position:absolute;left:-9999px;top:0;z-index:70;
+  background:#1B365D;color:#FFFFFF;padding:14px 20px;text-decoration:none;
+}
+.saltar:focus{left:0}
+
+/* ---------- barra ---------- */
+.barra{position:sticky;top:0;z-index:50;background:#FFFFFF;border-bottom:1px solid #E6E8EC}
+.barra-1{min-height:var(--barra-alto);display:flex;align-items:center;gap:clamp(14px,2.2vw,32px)}
+.marca{display:flex;align-items:center;gap:10px;text-decoration:none;color:#1B365D;margin-right:auto;min-width:0;min-height:48px;padding:8px 0}
+.marca .sello{flex:none;display:block}
+.marca b{
+  font-size:var(--t-cuerpo);line-height:1.3;letter-spacing:-.012em;
+  font-weight:800;font-stretch:100%;white-space:nowrap;
+}
+.sello .cuerpo{fill:#1B365D}
+.sello .canto{fill:#35608F}
+.sello .visto{fill:none;stroke:#FFFFFF;stroke-width:6.5;stroke-linecap:round;stroke-linejoin:round}
+.pie .sello .cuerpo{fill:#FFFFFF}
+.pie .sello .canto{fill:#C9D6E8}
+.pie .sello .visto{stroke:#12233F}
+
+.anclas{display:flex;gap:clamp(12px,1.7vw,26px)}
+.anclas a{
+  display:inline-flex;align-items:center;padding:17px 0;
+  color:#565A62;text-decoration:none;font-size:var(--t-rotulo);line-height:1.35;font-weight:500;
+  border-bottom:1px solid transparent;
+  transition:color var(--dur) var(--curva),border-color var(--dur) var(--curva);
+}
+.anclas a:hover{color:#1B365D;border-bottom-color:#1B365D}
+@media (max-width:899px){.anclas{display:none}}
+
+.barra-2{background:#F4F2ED;border-top:1px solid #E4E1DA;padding:6px 0}
+.riel{min-height:28px;display:flex;align-items:center;position:relative}
+.riel-linea{position:absolute;left:20px;right:20px;bottom:-6px;height:2px;background:#D3CFC6}
+.riel-linea i{
+  display:block;height:2px;background:#1B365D;width:100%;
+  transform:scaleX(.1667);transform-origin:left center;
+  transition:transform 240ms var(--curva);
+}
+.riel ol{list-style:none;margin:0;padding:0;display:flex;width:100%}
+.riel li{flex:1 1 0;min-width:0}
+.riel li span{
+  display:block;color:#565A62;font-size:var(--t-rotulo);line-height:1.35;letter-spacing:.06em;
+  text-transform:uppercase;font-weight:600;font-stretch:66%;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  transition:color var(--dur) var(--curva);
+}
+.riel li.viva span{color:#1B365D;font-weight:700}
+.riel-movil{display:none;align-items:center;justify-content:space-between;gap:16px;width:100%;margin:0}
+.riel-movil span{font-size:var(--t-rotulo);line-height:1.35;letter-spacing:.06em;text-transform:uppercase;font-weight:600;font-stretch:66%}
+.riel-movil .rm-k{color:#565A62}
+.riel-movil .rm-v{color:#1B365D;font-weight:700;text-align:right}
+@media (max-width:899px){.riel ol{display:none}.riel-movil{display:flex}}
+
+/* ---------- botones ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-height:52px;padding:8px 24px;border-radius:2px;border:1px solid transparent;
+  font-size:var(--t-cuerpo);line-height:1.3;font-weight:600;font-stretch:100%;
+  text-decoration:none;cursor:pointer;text-align:center;
+  transition:background-color var(--dur) var(--curva),color var(--dur) var(--curva),border-color var(--dur) var(--curva),box-shadow var(--dur) var(--curva),transform var(--dur) var(--curva);
+}
+.btn-p{background:#1B365D;color:#FFFFFF;box-shadow:0 2px 0 #0C1A30}
+.btn-p:hover{background:#12233F}
+.btn-p:active{transform:translateY(2px);box-shadow:0 0 0 rgba(0,0,0,0)}
+.btn-s{background:transparent;color:#1B365D;border-color:#1B365D}
+.btn-s:hover{background:rgba(27,54,93,.08)}
+.campo .btn-p,.campo-hondo .btn-p{background:#FFFFFF;color:#12233F;box-shadow:0 2px 0 #0C1A30}
+.campo .btn-p:hover{background:#BECDE4}
+.campo .btn-s,.fija .btn-s{color:#FFFFFF;border-color:rgba(255,255,255,.6)}
+.campo .btn-s:hover,.fija .btn-s:hover{background:rgba(255,255,255,.12);border-color:#FFFFFF}
+.btn-barra{min-height:48px;padding:8px 16px;font-size:var(--t-rotulo);font-weight:600}
+.acciones{display:flex;flex-wrap:wrap;gap:12px}
+
+/* ---------- papel: canto doblado y sombra corta ---------- */
+.papel{filter:var(--papel-sombra)}
+.campo .papel,.campo-hondo .papel{filter:var(--papel-sombra-campo)}
+.hoja{
+  --tras:#FFFFFF;
+  position:relative;background:#FFFFFF;color:#1B1E24;padding:22px;
+}
+.campo .hoja{--tras:#1B365D}
+.campo-hondo .hoja{--tras:#12233F}
+.sec-papel .hoja{--tras:#F4F2ED}
+/* canto de papel: el corte se pinta con un degradado de esquina, sin recortar la hoja */
+.hoja .doblez{
+  position:absolute;top:0;right:0;width:30px;height:30px;
+  background:linear-gradient(to top right,#D7D3CA 0 calc(50% - .5px),var(--tras) calc(50% + .5px) 100%);
+}
+
+/* ---------- portada ---------- */
+.portada{padding:48px 0 var(--portada-pb)}
+.portada .rej{align-items:start}
+.portada .bajada{color:#BECDE4;margin-top:28px;max-width:34ch}
+.portada .acciones{margin-top:36px}
+.portada .fina{margin-top:26px;max-width:46ch;color:#8FA3C2;font-size:var(--t-rotulo);line-height:1.55}
+.objeto{margin-bottom:calc(-1 * (var(--cruce) + var(--portada-pb)))}
+.portada .hoja{padding-bottom:14px}
+@media (max-width:1023px){.objeto{margin-top:44px}}
+.sec.tras-portada{padding-top:calc(var(--seccion) + var(--cruce))}
+
+/* ---------- cronograma ---------- */
+.crono-enc{border-bottom:1px solid #E4E1DA;padding-bottom:16px;margin-bottom:6px;padding-right:34px}
+.crono-enc h2{font-size:var(--t-bajada);line-height:1.3;letter-spacing:-.015em;font-weight:650}
+.crono-enc .meta{margin:8px 0 0;color:#565A62;font-size:var(--t-rotulo);line-height:1.45;letter-spacing:.03em;font-stretch:72%;font-weight:500}
+.hitos{list-style:none;margin:0;padding:0}
+.hito{display:grid;grid-template-columns:18px minmax(0,1fr);gap:16px;padding:20px 0;position:relative}
+.hito+.hito{border-top:1px solid #E6E8EC}
+.hito .punto{position:relative}
+.hito .punto::before{
+  content:"";position:absolute;left:4px;top:9px;width:9px;height:9px;border-radius:50%;
+  border:2px solid #1B365D;background:#FFFFFF;
+}
+.hito .punto::after{content:"";position:absolute;left:8px;top:22px;bottom:-24px;width:1px;background:#E4E1DA}
+.hito:last-child .punto::after{display:none}
+.hito.perdida .punto::before{border-color:#B3261E;background:#B3261E}
+.hito .cuando{
+  display:block;color:#565A62;font-size:var(--t-rotulo);line-height:1.35;letter-spacing:.06em;
+  text-transform:uppercase;font-weight:600;font-stretch:68%;margin-bottom:6px;
+}
+.hito h3{font-size:var(--t-cuerpo);line-height:1.35;letter-spacing:-.01em;font-weight:650;margin-bottom:4px}
+.hito p{color:#565A62;font-size:var(--t-rotulo);line-height:1.55}
+
+/* segunda hoja montada: sale del flujo de la hoja madre y se corre hacia el campo azul */
+.placa{
+  --placa-fuera:16px;
+  position:relative;z-index:2;background:#FFFFFF;
+  border:0;border-top:3px solid #B3261E;
+  padding:20px 22px 22px;margin-top:18px;
+  margin-left:calc(-1 * (34px + var(--hoja-pad) + var(--placa-fuera)));
+  margin-right:calc(10px - var(--hoja-pad));
+  box-shadow:0 2px 4px rgba(0,0,0,.34),0 26px 44px -12px rgba(0,0,0,.55);
+}
+@media (min-width:1280px){.placa{--placa-fuera:36px}}
+.placa .cifra{color:#B3261E;font-size:clamp(3rem,4.4vw,4.5rem);margin-bottom:12px}
+.placa p{font-size:var(--t-rotulo);line-height:1.55;color:#565A62}
+.placa .cierre{border-top:1px solid #E4E1DA;margin-top:14px;padding-top:14px;color:#1B1E24}
+.rojo{color:#B3261E;font-weight:680}
+
+/* ---------- objeto informe: dos hojas apiladas ---------- */
+.informe-obj{position:relative}
+.informe-obj::before{
+  content:"";position:absolute;z-index:0;top:12px;left:12px;right:-12px;bottom:-12px;
+  background:#E8E4DB;border:1px solid #D3CEC3;
+  box-shadow:0 1px 1px rgba(0,0,0,.16),0 12px 20px -10px rgba(0,0,0,.24);
+}
+.informe-obj>.papel{position:relative;z-index:1}
+.muestra .eti{
+  position:absolute;z-index:3;top:var(--hoja-pad);right:var(--hoja-pad);
+  background:#FFFFFF;border:1px solid #1B365D;color:#1B365D;padding:4px 10px;border-radius:2px;
+  font-size:var(--t-rotulo);line-height:1.2;letter-spacing:.1em;text-transform:uppercase;font-weight:700;font-stretch:68%;
+}
+.muestra h3{margin-top:0;padding-right:100px;font-size:var(--t-bajada);line-height:1.3;letter-spacing:-.015em;font-weight:650}
+.muestra .empresa{display:inline-block;margin-top:6px;color:#565A62;font-size:var(--t-rotulo);line-height:1.5;border-bottom:1px dashed #D3CFC6;padding-bottom:2px}
+.muestra .sub{margin-top:10px;color:#565A62;font-size:var(--t-rotulo);line-height:1.5}
+.muestra .nota{margin-top:18px;color:#565A62;font-size:var(--t-rotulo);line-height:1.5}
+.tabla-env{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-top:20px}
+.tabla-env:focus-visible{outline:2px solid #B3261E;outline-offset:2px}
+.tabla-caja{position:relative;min-width:720px}
+.muestra .tabla-caja{min-width:620px}
+.tabla-m{width:100%;border-collapse:collapse}
+.tabla-m th{
+  text-align:left;padding:0 12px 10px 0;border-bottom:1px solid #1B1E24;color:#1B1E24;
+  font-size:var(--t-rotulo);line-height:1.35;font-weight:700;font-stretch:68%;white-space:nowrap;
+}
+.tabla-m td{padding:14px 12px 14px 0;border-bottom:1px solid #E6E8EC;font-size:var(--t-rotulo);line-height:1.45;vertical-align:top;color:#1B1E24}
+.tabla-m tr.real td{font-weight:500}
+.tabla-m tr.real td:last-child{color:#B3261E;font-weight:700}
+.bar{display:block;height:10px;background:#D3CFC6}
+.tabla-m td.tapa{
+  background:#F4F2ED;border-left:1px solid #D3CFC6;border-bottom:0;
+  vertical-align:middle;text-align:center;padding:14px;width:28%;
+}
+.tapa span{
+  display:block;color:#1B365D;font-size:var(--t-rotulo);line-height:1.4;letter-spacing:.08em;
+  text-transform:uppercase;font-weight:700;font-stretch:68%;
+}
+.accion-informe{align-self:start;padding-top:clamp(0px,5vw,72px)}
+.accion-informe .menor{margin-top:20px;color:#565A62;max-width:40ch}
+.enlace{color:#1B365D;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px;overflow-wrap:anywhere}
+.enlace:hover{text-decoration-thickness:2px}
+
+/* ---------- filas de resultado y de condicion ---------- */
+.fila{border-top:1px solid #E6E8EC;padding:32px 0;row-gap:12px}
+.fila:last-of-type{border-bottom:1px solid #E6E8EC}
+.fila .rotulo{color:#1B365D}
+.fila p{color:#565A62;max-width:52ch}
+.fila .bajada{color:#1B1E24;max-width:34ch}
+
+/* ---------- matriz ---------- */
+.matriz-hoja .meta{
+  display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;
+  color:#565A62;font-size:var(--t-rotulo);line-height:1.45;letter-spacing:.04em;font-stretch:72%;font-weight:500;
+  padding-right:34px;
+}
+.matriz-hoja h3{margin-top:12px;font-size:var(--t-bajada);line-height:1.3;letter-spacing:-.015em;font-weight:650}
+.matriz-hoja .tabla-caja{min-width:720px}
+.matriz-hoja .pie-obj{
+  display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;
+  border-top:1px solid #1B1E24;margin-top:0;padding-top:16px;
+  font-size:var(--t-rotulo);line-height:1.45;font-weight:600;font-stretch:68%;
+}
+.matriz-hoja .nota{margin-top:16px;color:#565A62;font-size:var(--t-rotulo);line-height:1.5;max-width:82ch}
+.tabla-m td.req{font-weight:600;color:#1B1E24}
+.v{font-weight:700}
+.v.no{color:#B3261E}
+.v.ok{color:#565A62;font-weight:500}
+
+@media (max-width:719px){
+  .matriz-hoja .tabla-env{overflow-x:visible}
+  .matriz-hoja .tabla-caja{min-width:0}
+  .matriz-hoja .tabla-m,.matriz-hoja .tabla-m tbody{display:block}
+  .matriz-hoja .tabla-m thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+  .matriz-hoja .tabla-m tr{display:block;border-top:1px solid #E6E8EC;padding-block:16px}
+  .matriz-hoja .tabla-m tr:first-child{border-top:0;padding-top:4px}
+  .matriz-hoja .tabla-m td{display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px;border:0;padding:3px 0}
+  .matriz-hoja .tabla-m td::before{
+    content:attr(data-k);color:#565A62;font-size:var(--t-rotulo);line-height:1.45;letter-spacing:.06em;
+    text-transform:uppercase;font-weight:600;font-stretch:68%;
   }
-  * { box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
-  body { margin: 0; background: var(--white); color: var(--ink); font-family: Archivo, "Helvetica Neue", Arial, sans-serif; font-size: 17.5px; line-height: 1.55; -webkit-font-smoothing: antialiased; font-variant-numeric: tabular-nums; caret-color: var(--navy); }
-  ::selection { background: var(--navy); color: var(--white); }
-  a { color: var(--navy); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .18em; text-decoration-color: rgba(var(--navy-rgb), .6); }
-  a:hover { text-decoration-color: var(--navy); }
-  a, .btn { touch-action: manipulation; -webkit-tap-highlight-color: rgba(var(--navy-rgb), .14); }
-  :focus-visible { outline: 3px solid var(--navy); outline-offset: 3px; border-radius: 2px; }
-  .band :focus-visible, .crono :focus-visible { outline-color: var(--white); }
-  p { margin: 0 0 1em; text-wrap: pretty; }
-  strong { font-weight: 600; }
-  main.contents { display: contents; }
-  .saltar { position: absolute; left: -9999px; top: 0; }
-  .saltar:focus { position: fixed; left: 16px; top: 16px; z-index: 30; background: var(--navy); color: var(--white); padding: 12px 18px; border-radius: 4px; text-decoration: none; font-weight: 600; }
-  .oculto { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .matriz-hoja .tabla-m td.req{display:block;margin-bottom:6px}
+  .matriz-hoja .tabla-m td.req::before{content:none}
+}
 
-  /* Rejilla de página: riel de hitos a la izquierda en escritorio */
-  .wrap { max-width: 1280px; margin: 0 auto; padding-left: max(clamp(18px, 4vw, 48px), env(safe-area-inset-left)); padding-right: max(clamp(18px, 4vw, 48px), env(safe-area-inset-right)); }
-  .page { display: grid; grid-template-columns: minmax(0, 1fr); column-gap: 56px; }
-  @media (min-width: 1040px) { .page { grid-template-columns: clamp(148px, 13vw, 188px) minmax(0, 1fr); column-gap: clamp(32px, 3vw, 56px); } }
-  .full { grid-column: 1 / -1; }
-  .col, section, .body, .band { min-width: 0; }
-  @media (min-width: 1040px) { .col { grid-column: 2; } }
+/* ---------- datos: los conteos ---------- */
+.fila-d{border-top:1px solid rgba(255,255,255,.20);padding:36px 0;row-gap:24px}
+.fila-d .rej{align-items:center}
+.fila-d .cifra{color:#EF6152}
+.fila-d.oportunidad .cifra{color:#FFFFFF}
+.fila-d .de{display:block;margin-top:6px;color:#8FA3C2;font-size:var(--t-bajada);line-height:1.3;letter-spacing:.02em;font-weight:600;font-stretch:72%}
+.fila-d .rot{margin:16px 0 0;color:#BECDE4;font-size:var(--t-cuerpo);line-height:1.5;max-width:40ch}
+.conteo{display:block;width:100%;height:clamp(30px,3.2vw,44px)}
+.conteo-rejilla{height:clamp(96px,10vw,132px)}
+.marca-llena{fill:#EF6152}
+.marca-vacia{fill:rgba(255,255,255,.22)}
+.oportunidad .marca-llena{fill:#FFFFFF}
+.leyenda{
+  display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;margin:12px 0 0;
+  color:#8FA3C2;font-size:var(--t-rotulo);line-height:1.45;font-weight:600;font-stretch:68%;
+}
+.linea-viva{
+  border-top:1px solid rgba(255,255,255,.20);margin-top:clamp(32px,4vw,52px);padding-top:28px;
+  color:#BECDE4;font-size:var(--t-cuerpo);line-height:1.6;
+}
+.linea-viva strong{color:#FFFFFF}
 
-  /* Cabecera: fija, para que agendar esté siempre a mano */
-  header { position: sticky; top: 0; z-index: 20; background: var(--white); display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 20px 0; border-bottom: 1px solid var(--line-2); }
-  .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--navy); min-width: 0; min-height: 48px; }
-  .brand img { width: 34px; height: 34px; display: block; flex: none; }
-  .brand .name { font-weight: 800; font-stretch: 112%; font-size: 22px; letter-spacing: -0.01em; line-height: 1; }
-  .brand .desc { display: block; font-size: 13.5px; font-weight: 500; color: var(--ink-2); margin-top: 3px; letter-spacing: 0; font-stretch: 100%; }
-  .brand:hover .name { color: var(--navy-deep); }
-  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 12px 20px; min-height: 48px; border-radius: 4px; font-weight: 600; font-size: 16px; line-height: 1.2; text-decoration: none; border: 1.5px solid var(--navy); color: var(--navy); background: var(--white); transition: background .18s ease, color .18s ease, transform .18s var(--ease); }
-  .btn:hover { background: var(--navy-soft); }
-  .btn:active { transform: translateY(1px); }
-  .btn.primary { background: var(--navy); color: var(--white); }
-  .btn.primary:hover { background: var(--navy-deep); }
-  .btn svg { width: 18px; height: 18px; flex: none; }
-  @media (prefers-reduced-motion: reduce) { .btn { transition: none; } .btn:active { transform: none; } }
-  header .btn { padding: 10px 16px; min-height: 48px; font-size: 15px; white-space: nowrap; }
-  @media (max-width: 560px) { header { padding: 12px 0; } header .btn { padding: 10px 12px; font-size: 14px; } .brand .desc { display: none; } }
+/* ---------- preguntas ---------- */
+.preguntas-lista{max-width:76ch}
+.preguntas-lista details{border-top:1px solid #E4E1DA}
+.preguntas-lista details:last-child{border-bottom:1px solid #E4E1DA}
+.preguntas-lista summary{
+  display:flex;gap:16px;align-items:baseline;cursor:pointer;list-style:none;
+  padding:20px 0;font-size:var(--t-bajada);line-height:1.5;font-weight:500;
+}
+.preguntas-lista summary::-webkit-details-marker{display:none}
+.preguntas-lista summary::after{
+  content:"";flex:none;width:11px;height:11px;margin-left:auto;align-self:center;
+  border-right:1.5px solid #1B365D;border-bottom:1.5px solid #1B365D;
+  transform:rotate(45deg) translate(-2px,-2px);
+  transition:transform var(--dur) var(--curva);
+}
+.preguntas-lista details[open] summary::after{transform:rotate(225deg) translate(-2px,-2px)}
+.preguntas-lista summary:hover{color:#1B365D}
+.preguntas-lista .resp{padding:0 0 24px;color:#565A62;max-width:52ch}
 
-  /* Portada: promesa a la izquierda, cronograma real a la derecha */
-  .hero { display: grid; grid-template-columns: minmax(0, 1fr); gap: 36px; padding: clamp(36px, 5vw, 64px) 0 clamp(40px, 5vw, 72px); align-items: start; }
-  @media (min-width: 1000px) {
-    .hero { grid-template-columns: minmax(0, 11fr) minmax(0, 13fr); gap: clamp(36px, 5vw, 72px); }
+/* ---------- garantia ---------- */
+.garantia{margin-top:clamp(40px,5vw,64px);border-top:1px solid #1B365D;padding-top:28px;row-gap:16px}
+.garantia h3{font-size:var(--t-bajada);line-height:1.3;letter-spacing:-.015em;font-weight:650}
+.garantia p{color:#565A62;max-width:56ch}
+
+/* ---------- contacto ---------- */
+.contacto p{max-width:52ch}
+.ficha{margin:0}
+.ficha .linea:last-child{border-bottom:1px solid #E4E1DA}
+.ficha .linea{display:grid;grid-template-columns:minmax(130px,1fr) minmax(0,2fr);gap:16px;align-items:center;min-height:68px;padding:10px 0;border-top:1px solid #E4E1DA}
+.ficha dt{color:#565A62;font-size:var(--t-rotulo);line-height:1.45;letter-spacing:.07em;text-transform:uppercase;font-weight:600;font-stretch:68%}
+.ficha dd{margin:0;font-size:var(--t-cuerpo);line-height:1.5}
+.ficha dd a{display:inline-flex;align-items:center;min-height:48px}
+
+/* ---------- pie ---------- */
+.pie{background:#0C1A30;color:#FFFFFF;padding:56px 0 40px}
+.pie .rej{row-gap:40px}
+.pie .marca{color:#FFFFFF;margin-right:0;display:inline-flex}
+.pie .lema{color:#8FA3C2;margin-top:14px;font-size:var(--t-rotulo);line-height:1.55;max-width:44ch}
+.pie .pie-t{margin-bottom:14px;color:#8FA3C2;font-size:var(--t-rotulo);line-height:1.35;letter-spacing:.09em;text-transform:uppercase;font-weight:600;font-stretch:68%}
+.pie ul{list-style:none;margin:0;padding:0}
+.pie li{font-size:var(--t-rotulo);line-height:1.5}
+.pie li a{display:inline-flex;align-items:center;min-height:48px}
+.pie li.horario{display:flex;align-items:center;min-height:48px}
+.pie li:last-child{margin-bottom:0}
+.pie a{color:#FFFFFF;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.35);overflow-wrap:anywhere}
+.pie a:hover{border-bottom-color:#FFFFFF}
+.pie .horario{color:#8FA3C2}
+.pie-cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}
+@media (max-width:479px){.pie-cols{grid-template-columns:minmax(0,1fr)}}
+.pie-fin{
+  max-width:1240px;margin:48px auto 0;padding:24px 20px 0;
+  display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between;
+  border-top:1px solid rgba(255,255,255,.20);
+  color:#8FA3C2;font-size:var(--t-rotulo);line-height:1.5;
+}
+
+/* ---------- barra fija de celular ---------- */
+.cola{height:0}
+.fija{
+  position:fixed;left:0;right:0;bottom:0;z-index:55;display:none;
+  background:#1B365D;
+  padding:8px 12px calc(8px + env(safe-area-inset-bottom));
+  box-shadow:0 -8px 24px -12px rgba(0,0,0,.35);
+  transform:translateY(120%);transition:transform 200ms var(--curva);
+}
+.fija.vista{transform:translateY(0)}
+.fija .par{display:flex;gap:8px}
+.fija .btn{min-height:48px;padding:8px 10px;font-size:var(--t-rotulo);flex:1 1 0}
+.fija .btn-p{background:#FFFFFF;color:#12233F;box-shadow:0 2px 0 #0C1A30}
+.fija .btn-p{flex-grow:1.4}
+@media (max-width:899px){.fija{display:block}.cola{height:104px}}
+/* por debajo de 400 px el boton de la barra se retira entero: los dos de portada ya estan a la vista */
+@media (max-width:399px){.barra-1 .btn-barra{display:none}}
+
+/* ---------- ritmo mayor en pantallas anchas ---------- */
+@media (min-width:1000px){
+  .env{padding:0 40px}
+  .riel-linea{left:40px;right:40px}
+  .sec{padding:112px 0}
+  .portada{padding:88px 0 var(--portada-pb)}
+  .hoja{padding:32px}
+  .portada .hoja{padding-bottom:18px}
+  .fila-d{padding:48px 0}
+  .pie{padding:80px 0 40px}
+  .pie-fin{padding:24px 40px 0}
+}
+@media (min-width:1400px){.sec{padding:128px 0}}
+
+/* ---------- movimiento reducido ---------- */
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition-duration:1ms!important;animation-duration:1ms!important;animation-iteration-count:1!important}
+}
+
+/* ---------- alto contraste del sistema ---------- */
+@media (forced-colors:active){
+  .hito .punto::before{background:Canvas;border-color:CanvasText}
+  .hito.perdida .punto::before{background:Highlight;border-color:Highlight}
+  .v.no{color:LinkText;text-decoration:underline;text-underline-offset:3px}
+  .v.ok{color:GrayText}
+  .marca-llena{fill:CanvasText}
+  .marca-vacia{fill:GrayText}
+  .conteo{outline:1px solid CanvasText;outline-offset:4px}
+  .btn{border:1px solid ButtonText}
+  .btn-p{background:ButtonFace;color:ButtonText;box-shadow:none}
+  .placa{border:1px solid CanvasText;box-shadow:none}
+  .tapa{border-left-color:CanvasText}
+  .bar{background:GrayText}
+  .riel-linea i{background:Highlight}
+  .hoja{border:1px solid CanvasText}
+  .hoja .doblez{display:none}
+  .informe-obj::before{display:none}
+  .papel{filter:none}
+}
+
+/* ---------- hoja de impresion ---------- */
+@media print{
+  @page{size:A4;margin:16mm}
+  html{font-size:10.5pt;scroll-behavior:auto}
+  body{background:#FFFFFF;color:#000000}
+  .barra,.fija,.cola,.saltar{display:none!important}
+  .campo,.campo-hondo,.sec-papel,.pie{background:#FFFFFF!important;color:#000000!important}
+  .campo *,.campo-hondo *,.pie *{color:#000000!important}
+  .portada .fina,.portada .bajada,.fila-d .rot,.fila-d .de,.leyenda,.linea-viva,.pie .lema,.pie .horario,.pie-fin{color:#333333!important}
+  .fila-d .cifra,.fila-d.oportunidad .cifra{color:#000000!important}
+  .marca-llena{fill:#000000!important}
+  .marca-vacia{fill:#C4C4C4!important}
+  .conteo{height:26px}
+  .conteo-rejilla{height:86px}
+  .fila-d,.linea-viva{border-top-color:#999999!important}
+  .papel{filter:none!important}
+  .hoja{border:1px solid #999999}
+  .hoja .doblez{display:none}
+  .informe-obj::before{display:none}
+  .muestra .eti{position:static;display:inline-block;margin-bottom:10px}
+  .muestra h3{padding-right:0}
+  .placa{
+    box-shadow:none!important;border:1px solid #000000!important;
+    margin-left:0!important;margin-right:0!important;
   }
-  h1 { font-weight: 800; font-stretch: 112%; font-size: clamp(2.5rem, 4.8vw, 4.4rem); line-height: 1.0; letter-spacing: -0.025em; margin: 0 0 22px; text-wrap: balance; color: var(--navy); font-variant-numeric: proportional-nums; }
-  .lead { font-size: clamp(1.1rem, 1.5vw, 1.3rem); line-height: 1.5; max-width: 32em; margin: 0 0 28px; color: var(--ink-2); }
-  .btns { display: grid; grid-template-columns: minmax(0, 318px); gap: 12px; }
-  @media (min-width: 700px) and (max-width: 999.98px) { .btns { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 640px; } }
-  .fine { margin: 20px 0 0; font-size: 14.5px; color: var(--ink-2); max-width: 44em; }
-  @media (max-width: 560px) {
-    .hero { gap: 22px; padding: 22px 0 32px; }
-    h1 { margin-bottom: 14px; }
-    .lead { margin-bottom: 18px; }
-    .fine { margin-top: 10px; }
-  }
-
-  .crono { background: var(--navy); color: var(--white); border-radius: 4px; padding: clamp(20px, 2.6vw, 30px) clamp(18px, 2.6vw, 30px) clamp(16px, 2vw, 22px); box-shadow: var(--shadow); }
-  .crono .head { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; font-size: 14px; color: var(--on-navy-2); padding-bottom: 14px; border-bottom: 1px solid rgba(255,255,255,.18); margin-bottom: 6px; }
-  .crono .head b { color: var(--white); font-weight: 600; }
-  .hitos { list-style: none; margin: 0; padding: 0; position: relative; }
-  .hitos::before { content: ""; position: absolute; left: 5px; top: 14px; bottom: 14px; width: 2px; background: rgba(255,255,255,.28); }
-  .hitos::after { content: ""; position: absolute; left: 5px; top: 14px; width: 2px; height: var(--draw, 0px); background: var(--white); transform-origin: top; }
-  @media (prefers-reduced-motion: no-preference) { .hitos::after { transform: scaleY(0); animation: draw 1.1s var(--ease) .15s forwards; } }
-  @keyframes draw { to { transform: scaleY(1); } }
-  .hito { position: relative; display: grid; grid-template-columns: minmax(0, 1fr); gap: 2px 18px; padding: 14px 0 14px 28px; }
-  @media (min-width: 480px) { .hito { grid-template-columns: 148px minmax(0, 1fr); } }
-  @media (min-width: 1000px) and (max-width: 1039.98px) { .hito { grid-template-columns: 112px minmax(0, 1fr); } }
-  .hito::before { content: ""; position: absolute; left: 0; top: 19px; width: 12px; height: 12px; border-radius: 50%; background: var(--navy); border: 2px solid var(--white); z-index: 1; }
-  .hito .cuando { font-stretch: 88%; font-weight: 500; font-size: 14.5px; color: var(--on-navy-2); line-height: 1.4; padding-top: 2px; }
-  .hito .que { font-weight: 700; font-size: 17px; line-height: 1.3; color: var(--white); }
-  .hito .nota { display: block; font-size: 15px; color: var(--on-navy-2); line-height: 1.45; margin-top: 3px; }
-  .hito .nota b { color: var(--white); font-weight: 600; }
-  .hito.perdida::before { background: var(--red); border-color: var(--white); }
-  .placa { grid-column: 1 / -1; background: var(--white); color: var(--ink); border-radius: 4px; padding: 18px 20px 16px; margin-top: 8px; }
-  .placa .n { font-weight: 800; font-stretch: 112%; font-size: clamp(2.6rem, 4vw, 3.8rem); line-height: .95; letter-spacing: -0.03em; color: var(--red); margin: 0 0 8px; font-variant-numeric: proportional-nums; }
-  .placa p { margin: 0; font-size: 15.5px; line-height: 1.5; color: var(--ink-2); max-width: 44em; }
-  .placa .real { margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--line-2); font-size: 14.5px; color: var(--ink); }
-  .placa .real b { color: var(--red); }
-  @media (max-width: 560px) {
-    .crono { padding: 18px 16px 14px; }
-    .crono .head { padding-bottom: 10px; }
-    .hito { padding: 11px 0 11px 26px; }
-  }
-
-  /* Riel de hitos (solo escritorio): el mismo eje del cronograma, que se llena mientras se lee */
-  .rail { display: none; }
-  @media (min-width: 1040px) {
-    .rail { display: block; grid-column: 1; grid-row: 3 / span 6; position: sticky; top: 117px; align-self: start; padding-top: 60px; }
-    .rail ol { list-style: none; margin: 0; padding: 0 0 0 22px; position: relative; }
-    .rail ol::before { content: ""; position: absolute; left: 5px; top: 8px; bottom: 8px; width: 2px; background: var(--line); }
-    .rail ol::after { content: ""; position: absolute; left: 5px; top: 8px; width: 2px; height: var(--fill, 0px); background: var(--navy); transition: height .55s var(--ease); }
-    .rail .track { position: relative; }
-    .rail .marker { position: absolute; left: 0; top: 4px; width: 12px; height: 12px; border-radius: 50%; background: var(--navy); border: 2px solid var(--white); box-shadow: 0 0 0 2px var(--navy); transform: translateY(var(--y, 0px)); transition: transform .55s var(--ease); z-index: 1; }
-    .rail li { padding: 0 0 16px; }
-    .rail a { display: block; padding: 8px 0; min-height: 48px; text-decoration: none; color: var(--ink-2); font-size: 14.5px; font-weight: 500; line-height: 1.3; }
-    .rail a[aria-current] { color: var(--navy); font-weight: 700; }
-    .rail a:hover { color: var(--navy); }
-    .rail .t { display: block; font-size: 12.5px; color: var(--ink-2); font-weight: 400; margin-top: 2px; }
-  }
-  @media (prefers-reduced-motion: reduce) { .rail .marker, .rail ol::after { transition: none; } }
-  .tick { display: none; }
-  @media (max-width: 1039.98px) {
-    section.col { position: relative; padding-left: 28px; }
-    section.col::before { content: ""; position: absolute; left: 5px; top: 0; bottom: 0; width: 2px; background: var(--line); }
-    .tick { position: relative; display: block; margin: 0 0 14px; font-size: 14.5px; font-weight: 500; font-stretch: 88%; color: var(--ink-2); line-height: 1.4; }
-    .tick::before { content: ""; position: absolute; left: -28px; top: 4px; width: 12px; height: 12px; border-radius: 50%; background: var(--navy); border: 2px solid var(--white); box-shadow: 0 0 0 2px var(--navy); }
-    #datos .tick::before { background: var(--red); box-shadow: 0 0 0 2px var(--red); }
-  }
-  section.hoy { padding-top: 0; container-type: inline-size; }
-
-  /* Banda del informe: un campo azul completo, que mide su propia caja */
-  .band { background: var(--navy); color: var(--white); border-radius: 4px; padding: 40px 44px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px 40px; align-items: center; }
-  @media (max-width: 860px) { .band { padding: 26px 22px; } }
-  @container (min-width: 660px) { .band { grid-template-columns: minmax(0, 1.35fr) minmax(280px, .85fr); } }
-  .band h2 { font-weight: 800; font-stretch: 108%; font-size: clamp(1.5rem, 2.6vw, 2.1rem); letter-spacing: -0.02em; line-height: 1.12; margin: 0 0 12px; color: var(--white); text-wrap: balance; }
-  .band p { margin: 0; font-size: 17px; color: var(--on-navy-2); max-width: 52ch; }
-  .band .btn { background: var(--white); color: var(--navy-deep); border-color: var(--white); width: 100%; }
-  .band .btn:hover { background: var(--navy-soft); }
-  .band .note { font-size: 13.5px; color: var(--on-navy-2); margin-top: 10px; max-width: 34ch; }
-  .band .alt { display: inline-flex; align-items: center; min-height: 48px; margin-top: 2px; color: var(--white); font-size: 15px; font-weight: 500; text-decoration-color: rgba(255,255,255,.55); }
-  .band .alt:hover { text-decoration-color: var(--white); }
-
-  section { padding: clamp(56px, 8vw, 96px) 0 0; scroll-margin-top: 96px; }
-  @media (max-width: 560px) { section { scroll-margin-top: 80px; } }
-  h2.t { font-weight: 800; font-stretch: 108%; font-size: clamp(1.7rem, 3vw, 2.5rem); letter-spacing: -0.02em; line-height: 1.08; margin: 0 0 18px; text-wrap: balance; max-width: 24ch; color: var(--ink); }
-  .body > p { max-width: 62ch; }
-
-  /* Lo que cambia: tres resultados sobre reglas, tantas columnas como quepan */
-  .outcomes { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 0 32px; margin-top: 28px; }
-  .outcome { border-top: 2px solid var(--navy); padding: 16px 0 22px; min-width: 0; }
-  .outcome h3 { font-weight: 700; font-size: 1.1rem; letter-spacing: -0.01em; line-height: 1.3; margin: 0 0 8px; text-wrap: balance; }
-  .outcome p { margin: 0; font-size: 16px; color: var(--ink-2); }
-
-  /* La matriz de un concurso real: la columna de la derecha es la espina */
-  .sheet { background: var(--white); border-radius: 4px; box-shadow: var(--shadow); padding: 22px 24px 18px; margin-top: 26px; min-width: 0; }
-  .sheet .meta { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; font-size: 14px; color: var(--ink-2); margin-bottom: 6px; font-stretch: 92%; }
-  .sheet h3 { font-size: 17px; font-weight: 700; margin: 0 0 14px; letter-spacing: -0.01em; }
-  .tablewrap { overflow-x: auto; overscroll-behavior-x: contain; margin: 0 -24px; padding: 0 24px; scrollbar-width: thin; scrollbar-color: var(--line) transparent; }
-  .tablewrap:focus-visible { outline: 3px solid var(--navy); outline-offset: -1px; border-radius: 2px; }
-  table { border-collapse: collapse; width: 100%; min-width: 600px; font-size: 14.5px; }
-  th { text-align: left; font-weight: 600; font-size: 13.5px; color: var(--ink-2); padding: 0 12px 10px 0; border-bottom: 2px solid var(--navy); vertical-align: bottom; }
-  th:last-child { color: var(--ink); }
-  td { padding: 11px 12px 11px 0; border-bottom: 1px solid var(--line-2); vertical-align: top; color: var(--ink-2); }
-  tr:last-child td { border-bottom: 0; }
-  td.req { color: var(--ink); font-weight: 500; min-width: 210px; }
-  td.n { color: var(--ink-2); white-space: nowrap; font-stretch: 92%; }
-  .v { display: inline-block; font-weight: 700; font-size: 15px; padding: 4px 10px; border-radius: 3px; white-space: nowrap; }
-  .v.ok { color: var(--navy); background: var(--navy-soft); }
-  .v.no { color: var(--red); background: var(--red-soft); }
-  @media (max-width: 704px) {
-    .tablewrap { margin: 0; padding: 0; overflow: visible; }
-    .tablewrap:focus-visible { outline: 0; }
-    table { min-width: 0; display: block; }
-    thead { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; border: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
-    tbody { display: block; }
-    tr { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 6px 12px; padding: 12px 0; border-bottom: 1px solid var(--line-2); }
-    tr:last-child { border-bottom: 0; }
-    td { display: block; padding: 0; border: 0; }
-    td.req { flex: 1 1 100%; min-width: 0; order: 1; }
-    td:nth-child(2), td:nth-child(3), td:nth-child(4) { order: 2; flex: 1 1 100%; font-size: 14.5px; color: var(--ink-2); font-stretch: 92%; white-space: normal; margin-top: -2px; }
-    td:nth-child(5) { order: 5; flex: 1 1 100%; display: flex; align-items: center; gap: 8px; margin-top: 2px; }
-    td:nth-child(5)::before { content: "Quedaron fuera por esto"; font-size: 14.5px; color: var(--ink-2); font-weight: 500; font-stretch: 92%; }
-    td:nth-child(2)::before { content: "Lo emite: "; }
-    td:nth-child(3)::before { content: "Conseguirlo toma: "; }
-    td:nth-child(4)::before { content: "Subsanable: "; }
-  }
-  .sheet .foot { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; font-size: 14px; color: var(--ink-2); margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line-2); }
-  .sheet .foot b { color: var(--red); font-weight: 700; }
-  .sheet .nota { font-size: 13.5px; color: var(--ink-2); margin: 8px 0 0; max-width: 62ch; }
-
-  /* Cifras del estudio de admisibilidad */
-  .figs { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 0 32px; margin-top: 22px; }
-  .fig { border-top: 1px solid var(--line); padding: 18px 0 20px; min-width: 0; }
-  .fig .v2 { font-weight: 800; font-stretch: 108%; font-size: clamp(2.2rem, 4vw, 3.2rem); letter-spacing: -0.03em; line-height: 1; color: var(--navy); font-variant-numeric: proportional-nums; }
-  .fig.fuera .v2 { color: var(--red); }
-  .fig .l { font-size: 15.5px; color: var(--ink-2); margin-top: 10px; line-height: 1.45; }
-  .ticker { margin-top: 8px; font-size: 14.5px; color: var(--ink-2); border-top: 1px solid var(--line); padding-top: 14px; display: flex; gap: 10px; align-items: baseline; }
-  .ticker .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--navy); display: inline-block; flex: none; transform: translateY(-1px); }
-
-  /* Cómo se contrata */
-  .terms { list-style: none; padding: 0; margin: 20px 0 0; border-top: 1px solid var(--line); max-width: 64ch; }
-  .terms li { padding: 14px 0; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: minmax(0, 1fr); gap: 4px 16px; font-size: 16.5px; color: var(--ink-2); }
-  @media (min-width: 600px) { .terms li { grid-template-columns: 150px minmax(0, 1fr); } }
-  .terms li b { font-weight: 700; color: var(--ink); font-size: 16px; }
-  .garantia { margin-top: 26px; background: var(--tint); border: 1px solid var(--line); border-radius: 4px; padding: 22px 24px; max-width: 64ch; display: grid; grid-template-columns: minmax(0, 1fr); gap: 18px 28px; align-items: center; }
-  @media (min-width: 620px) { .garantia { grid-template-columns: minmax(0, 1fr) 150px; max-width: 78ch; } }
-  .sello { width: 150px; height: 150px; color: var(--navy); opacity: .92; transform: rotate(-8deg); justify-self: start; }
-  @media (min-width: 620px) { .sello { justify-self: end; } }
-  .sello svg { width: 100%; height: 100%; display: block; }
-  .garantia .g { font-weight: 800; font-stretch: 108%; font-size: clamp(1.25rem, 2vw, 1.6rem); letter-spacing: -0.015em; line-height: 1.15; color: var(--navy); margin: 0 0 8px; }
-  .garantia p { margin: 0; font-size: 15.5px; color: var(--ink-2); }
-
-  /* Contacto: las dos puertas, la garantía al lado, y blancos de toque de verdad */
-  .contact-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 32px 48px; align-items: start; }
-  @media (min-width: 820px) { .contact-grid { grid-template-columns: minmax(0, 1.1fr) minmax(300px, .9fr); } }
-  .contact { background: var(--tint); border: 1px solid var(--line); border-radius: 4px; padding: 24px 26px; }
-  .contact .k { display: block; font-size: 13.5px; font-weight: 600; color: var(--ink-2); margin-bottom: 4px; }
-  .contact p { margin: 0 0 12px; font-size: 16.5px; }
-  .contact p:last-child { margin-bottom: 0; }
-  .contact .btn { width: 100%; margin-bottom: 12px; }
-  .contact .gar { font-size: 14.5px; color: var(--ink-2); margin: 2px 0 18px; }
-  .contact p a { display: inline-flex; align-items: center; min-height: 48px; margin: -12px 0; }
-  footer { margin-top: clamp(56px, 8vw, 96px); padding: 24px 0 calc(52px + env(safe-area-inset-bottom)); border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 10px 24px; justify-content: space-between; font-size: 14px; color: var(--ink-2); }
-  footer a { color: var(--ink-2); display: inline-block; padding: 12px 0; }
-  footer .pie2 { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 0 14px; }
+  .btn{border:1px solid #000000!important;background:#FFFFFF!important;color:#000000!important;box-shadow:none!important}
+  .sec{padding-block:20px}
+  .sec.tras-portada{padding-top:20px}
+  .objeto{margin-bottom:0}
+  .portada{padding-block:16px}
+  .papel,.hoja,.placa,.fila-d,.fila,.preguntas-lista details,.garantia{break-inside:avoid;page-break-inside:avoid}
+  .tabla-env{overflow:visible!important}
+  .tabla-caja{min-width:0!important}
+  .preguntas-lista .resp{display:block!important}
+  .preguntas-lista details::details-content{content-visibility:visible!important;display:block!important}
+  a.enlace[href^="http"]::after{content:" (" attr(href) ")";font-size:9pt;color:#333333;word-break:break-all}
+}
 </style>
 </head>
 <body>
-<a class="saltar" href="#informe">Saltar al contenido</a>
-<div class="wrap page">
-  <header class="full">
-    <a class="brand" href="/" aria-label="Admisible, inicio"><img src="icono-72.png" alt="" width="34" height="34" fetchpriority="high" decoding="async"><span><span class="name" translate="no">Admisible</span><span class="desc">Preparación de ofertas para SICOP</span></span></a>
-    <a class="btn" href="https://calendar.app.google/rv9Ajw7rBgRL8d5C7" target="_blank" rel="noopener" aria-label="Agendar 20 minutos, cabecera"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Agendar 20 minutos</a>
-  </header>
 
-  <main class="contents">
-  <div class="hero full">
-    <div>
-      <h1>Su próxima oferta, lista para firmar.</h1>
-      <p class="lead">Revisamos todas las licitaciones en las que su empresa puede participar, le decimos cuáles vale la pena y le entregamos la oferta completa, a tiempo y admisible. Usted decide el precio y firma.</p>
-      <div class="btns">
-        <a class="btn primary" href="#informe"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h8"/></svg>Pedir el informe de mi empresa</a>
-        <a class="btn" href="https://calendar.app.google/rv9Ajw7rBgRL8d5C7" target="_blank" rel="noopener" aria-label="Agendar 20 minutos, portada"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Agendar 20 minutos</a>
-      </div>
-      <p class="fine">Para empresas que ya le venden al Estado y quieren vender más sin agrandar la planilla.<br>Garantía: si no es admisible, no se cobra.</p>
-    </div>
+<a class="saltar" href="#principal">Saltar al contenido</a>
 
-    <div class="crono" role="group" aria-label="Cronograma de un concurso real en SICOP">
-      <div class="head"><span><b>Cronograma de un concurso real</b></span><span><span translate="no">2025LD-000181-0001102102</span> · Hospital San Juan de Dios, CCSS</span></div>
-      <ol class="hitos" role="list" style="--draw: 0px">
-        <li class="hito"><span class="cuando">6 de agosto de 2025, 14:57</span><span><span class="que">Publicación del cartel</span><span class="nota">Lentes para otorrinolaringología. Licitación reducida, 6 líneas.</span></span></li>
-        <li class="hito"><span class="cuando">13 de agosto de 2025, 08:30</span><span><span class="que">Apertura de ofertas</span><span class="nota">4 empresas, 21 ofertas por partida. <b>A esta hora su oferta ya tiene que estar cargada y firmada.</b></span></span></li>
-        <li class="hito perdida"><span class="cuando">Días siguientes</span><span><span class="que">Estudio de admisibilidad</span></span>
-          <div class="placa">
-            <p class="n">1 de 2</p>
-            <p>En los concursos que analizamos, de cada dos ofertas que las empresas presentan al Estado costarricense, una queda fuera antes de que concurse por precio. Casi nunca por el producto. Casi siempre por un papel faltante, un formato incorrecto o un plazo vencido.</p>
-            <p class="real">En este concurso: <b>10 de 21 quedaron fuera</b> antes de comparar precios.</p>
-          </div>
-        </li>
-        <li class="hito"><span class="cuando">2 días hábiles</span><span><span class="que">Prevención de subsanación</span><span class="nota">Una sola oportunidad para completar lo que faltó. Si no se contesta a tiempo, caduca.</span></span></li>
-        <li class="hito"><span class="cuando">2 de setiembre de 2025</span><span><span class="que">Acto final</span><span class="nota">1 adjudicatario.</span></span></li>
+<header class="barra">
+  <div class="env barra-1">
+    <a class="marca" href="#inicio" aria-label="Admisible, inicio">
+      <svg class="sello" viewBox="0 0 64 64" width="32" height="32" aria-hidden="true" focusable="false">
+        <path class="cuerpo" d="M15 6 H42 L58 22 V49 Q58 58 49 58 H15 Q6 58 6 49 V15 Q6 6 15 6 Z"/>
+        <path class="canto" d="M42 6 V22 H58 Z"/>
+        <path class="visto" d="M20 34 L29 43 L46 25"/>
+      </svg>
+      <b>Admisible</b>
+    </a>
+    <nav class="anclas" aria-label="Secciones">
+      <a href="#informe">Informe</a>
+      <a href="#recibe">Qué recibe</a>
+      <a href="#datos">Los datos</a>
+      <a href="#preguntas">Preguntas</a>
+      <a href="#contratar">Contratar</a>
+    </nav>
+    <a class="btn btn-s btn-barra" href="https://calendar.app.google/rv9Ajw7rBgRL8d5C7" target="_blank" rel="noopener">Agendar 20 minutos<span class="oculto"> (se abre en una pestaña nueva)</span></a>
+  </div>
+  <div class="barra-2">
+    <div class="env riel">
+      <div class="riel-linea" aria-hidden="true"><i></i></div>
+      <ol id="riel">
+        <li class="viva"><span>Hoy</span></li>
+        <li><span>Antes de la apertura</span></li>
+        <li><span>Estudio de admisibilidad</span></li>
+        <li><span>Antes de decidir</span></li>
+        <li><span>Antes del próximo cartel</span></li>
+        <li><span>Esta semana</span></li>
       </ol>
+      <p class="riel-movil"><span class="rm-k">Dónde va</span><span class="rm-v" id="riel-actual">Hoy</span></p>
     </div>
   </div>
+</header>
 
-  <nav class="rail" aria-label="Momentos del concurso">
-    <div class="track">
-    <span class="marker" aria-hidden="true"></span>
-    <ol role="list">
-      <li><a href="#informe" aria-current="location">Hoy<span class="t">Su informe, sin costo</span></a></li>
-      <li><a href="#recibe">Antes de la apertura<span class="t">Lo que recibe</span></a></li>
-      <li><a href="#datos">Estudio de admisibilidad<span class="t">Los datos</span></a></li>
-      <li><a href="#contratar">Antes del próximo cartel<span class="t">Cómo se contrata</span></a></li>
-      <li><a href="#contacto">Esta semana<span class="t">Hablemos</span></a></li>
-    </ol>
-    </div>
-  </nav>
+<main id="principal">
 
-  <section id="informe" class="col hoy">
-    <p class="tick">Hoy</p>
-    <div class="band">
-    <div>
-      <h2>Le decimos qué concursos dejó pasar su empresa en el último año y en cuáles quedó fuera, con número de expediente.</h2>
-      <p>Una página, con datos públicos de SICOP, hecha para su empresa. Es el mismo informe con el que empezamos a trabajar con cada cliente. Léalo y decida si vale la pena hablar.</p>
+<!-- =================== PORTADA =================== -->
+<section class="campo portada" id="inicio">
+  <div class="env rej">
+    <div class="c1-6">
+      <h1 class="display">Su próxima oferta, lista para firmar.</h1>
+      <p class="bajada">Revisamos las licitaciones en las que su empresa puede participar, le decimos cuáles valen la pena y le entregamos la oferta completa, a tiempo y admisible. Usted pone el precio y firma.</p>
+      <div class="acciones">
+        <a class="btn btn-p" href="#informe">Pedir el informe de mi empresa</a>
+        <a class="btn btn-s" href="https://calendar.app.google/rv9Ajw7rBgRL8d5C7" target="_blank" rel="noopener">Agendar 20 minutos<span class="oculto"> (se abre en una pestaña nueva)</span></a>
+      </div>
+      <p class="fina">Para empresas que ya le venden al Estado y quieren vender más sin agrandar la planilla.<br>Garantía: si no es admisible, no se cobra.</p>
     </div>
-    <div>
-      <a class="btn" href="mailto:alfaroluisdiego@admisible.com?subject=Informe%20de%20mi%20empresa&amp;body=Quiero%20el%20informe%20de%20mi%20empresa.%0D%0A%0D%0AEmpresa%3A%20%0D%0AC%C3%A9dula%20jur%C3%ADdica%3A%20"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>Pedir el informe por correo</a>
-      <div class="note">Sin costo. Se lo enviamos en dos días hábiles. Solo necesitamos el nombre de la empresa y la cédula jurídica.</div>
-      <a class="alt" href="https://wa.me/50686689746?text=Hola%2C%20quiero%20el%20informe%20de%20mi%20empresa" target="_blank" rel="noopener">O pídalo por WhatsApp al 8668&nbsp;9746</a>
-    </div>
-    </div>
-  </section>
 
-  <section id="recibe" class="col">
-    <p class="tick">Antes de la apertura</p>
-    <div class="body">
-      <h2 class="t">Participe en más licitaciones sin perder ninguna por un documento, un formato o un plazo</h2>
-      <p>Tres cosas, medibles en su propio SICOP a los tres meses.</p>
-      <div class="outcomes">
-        <div class="outcome"><h3>Ninguna oferta suya vuelve a quedar fuera por un documento, un formato o un plazo.</h3><p>Cada requisito del cartel, quién lo emite y para cuándo, resuelto antes de la apertura. Las prevenciones de subsanación se contestan el mismo día.</p></div>
-        <div class="outcome"><h3>No se le escapa un concurso de sus productos, en ninguna institución.</h3><p>Todas las semanas recibe los que puede ganar, con el precio al que se adjudicó la vez anterior y contra cuántos compitió el ganador.</p></div>
-        <div class="outcome"><h3>Presenta más ofertas con la misma gente.</h3><p>La oferta llega armada y cargada en SICOP. Su equipo pone el precio, revisa y firma. Nada más.</p></div>
+    <div class="c7-12 objeto">
+      <div class="papel">
+        <div class="hoja" role="group" aria-label="Cronograma de un concurso real">
+          <span class="doblez" aria-hidden="true"></span>
+          <div class="crono-enc">
+            <h2>Cronograma de un concurso real</h2>
+            <p class="meta"><span class="nodec" translate="no">2025LD-000181-0001102102</span> · Hospital San Juan de Dios, CCSS</p>
+          </div>
+          <ol class="hitos">
+            <li class="hito">
+              <span class="punto" aria-hidden="true"></span>
+              <div>
+                <span class="cuando">6 de agosto de 2025, 14:57</span>
+                <h3>Publicación del cartel</h3>
+                <p>Lentes para otorrinolaringología. Licitación reducida, 6 líneas.</p>
+              </div>
+            </li>
+            <li class="hito">
+              <span class="punto" aria-hidden="true"></span>
+              <div>
+                <span class="cuando">13 de agosto de 2025, 08:30</span>
+                <h3>Apertura de ofertas</h3>
+                <p>4 empresas, 21 ofertas por partida. <strong>A esta hora su oferta ya tiene que estar cargada y firmada.</strong></p>
+              </div>
+            </li>
+            <li class="hito perdida">
+              <span class="punto" aria-hidden="true"></span>
+              <div>
+                <span class="cuando">Días siguientes</span>
+                <h3>Estudio de admisibilidad</h3>
+                <div class="placa">
+                  <span class="cifra">1 de 2</span>
+                  <p>En los concursos que analizamos, de cada dos ofertas que se presentan al Estado una queda fuera antes de competir por precio. Casi nunca por el producto. Casi siempre por un papel que faltó, un formato o un plazo vencido.</p>
+                  <p class="cierre">En este concurso: <span class="rojo">10 de 21 quedaron fuera</span> antes de comparar precios.</p>
+                </div>
+              </div>
+            </li>
+            <li class="hito">
+              <span class="punto" aria-hidden="true"></span>
+              <div>
+                <span class="cuando">2 días hábiles</span>
+                <h3>Prevención de subsanación</h3>
+                <p>Una sola oportunidad para completar lo que faltó. Si no se contesta a tiempo, caduca.</p>
+              </div>
+            </li>
+            <li class="hito">
+              <span class="punto" aria-hidden="true"></span>
+              <div>
+                <span class="cuando">2 de setiembre de 2025</span>
+                <h3>Acto final</h3>
+                <p>1 adjudicatario.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== INFORME =================== -->
+<section class="sec sec-papel tras-portada" id="informe" data-momento="0">
+  <div class="env">
+    <div class="rej enc">
+      <h2 class="seccion-t c1-6">Qué concursos dejó pasar su empresa el año pasado y en cuáles quedó fuera, con número de expediente.</h2>
+      <p class="bajada c7-11">Una página con datos públicos de SICOP, hecha para su empresa. Es el mismo informe con el que arrancamos con cada cliente. Léalo y decida si vale la pena hablar.</p>
+    </div>
+
+    <div class="rej">
+      <div class="c1-8 informe-obj">
+        <div class="papel">
+          <div class="hoja muestra">
+            <span class="doblez" aria-hidden="true"></span>
+            <span class="eti">Muestra</span>
+            <h3>Concursos de su giro, últimos doce meses</h3>
+            <span class="empresa">Nombre de su empresa · cédula jurídica</span>
+            <p class="sub">Revisado en el expediente electrónico de SICOP.</p>
+            <div class="tabla-env" data-rotulo="Muestra del informe de una página, tabla desplazable">
+              <div class="tabla-caja">
+                <table class="tabla-m" role="table">
+                  <caption class="oculto">Muestra del informe de una página: una fila con el concurso 2025LD-000181-0001102102 del Hospital San Juan de Dios y cinco filas tapadas que llegan completas en el informe de su empresa.</caption>
+                  <thead role="rowgroup"><tr role="row"><th scope="col" role="columnheader">Procedimiento</th><th scope="col" role="columnheader">Institución</th><th scope="col" role="columnheader">Objeto</th><th scope="col" role="columnheader">Apertura</th><th scope="col" role="columnheader">Qué pasó</th></tr></thead>
+                  <tbody role="rowgroup">
+                    <tr role="row" class="real">
+                      <td role="cell"><span class="nodec" translate="no">2025LD-000181-0001102102</span></td>
+                      <td role="cell">Hospital San Juan de Dios, CCSS</td>
+                      <td role="cell">Lentes para otorrinolaringología</td>
+                      <td role="cell">13 de agosto de 2025</td>
+                      <td role="cell">10 de 21 ofertas quedaron fuera</td>
+                    </tr>
+                    <tr role="row"><td role="cell"><span class="bar" aria-hidden="true" style="width:76%"></span></td><td role="cell"><span class="bar" aria-hidden="true" style="width:88%"></span></td><td role="cell"><span class="bar" aria-hidden="true" style="width:94%"></span></td><td role="cell"><span class="bar" aria-hidden="true" style="width:62%"></span></td><td role="cell" class="tapa" rowspan="5"><span>Va completo en su informe</span></td></tr>
+                    <tr role="row" aria-hidden="true"><td role="cell"><span class="bar" style="width:70%"></span></td><td role="cell"><span class="bar" style="width:72%"></span></td><td role="cell"><span class="bar" style="width:80%"></span></td><td role="cell"><span class="bar" style="width:58%"></span></td></tr>
+                    <tr role="row" aria-hidden="true"><td role="cell"><span class="bar" style="width:78%"></span></td><td role="cell"><span class="bar" style="width:92%"></span></td><td role="cell"><span class="bar" style="width:66%"></span></td><td role="cell"><span class="bar" style="width:64%"></span></td></tr>
+                    <tr role="row" aria-hidden="true"><td role="cell"><span class="bar" style="width:72%"></span></td><td role="cell"><span class="bar" style="width:80%"></span></td><td role="cell"><span class="bar" style="width:88%"></span></td><td role="cell"><span class="bar" style="width:60%"></span></td></tr>
+                    <tr role="row" aria-hidden="true"><td role="cell"><span class="bar" style="width:74%"></span></td><td role="cell"><span class="bar" style="width:84%"></span></td><td role="cell"><span class="bar" style="width:76%"></span></td><td role="cell"><span class="bar" style="width:62%"></span></td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <p class="nota">El concurso que se ve es público y está en el expediente de SICOP. Las demás líneas llegan completas en el informe de su empresa, con número de procedimiento y fecha.</p>
+          </div>
+        </div>
       </div>
 
-      <h2 class="t" style="margin-top:56px">Así se ve lo que recibe antes de cada apertura</h2>
-      <p>Un concurso real, ya resuelto. La columna de la derecha muestra cuántas ofertas quedaron fuera por cada requisito. Ese es el tipo de detalle que decide una adjudicación.</p>
-      <div class="sheet" role="group" aria-label="Matriz de admisibilidad de un concurso real">
-        <div class="meta"><span translate="no">2025LD-000181-0001102102</span><span>Hospital San Juan de Dios, CCSS · 6 líneas · 4 oferentes</span></div>
+      <div class="c9-13 accion-informe">
+        <div class="acciones">
+          <a class="btn btn-p" href="mailto:alfaroluisdiego@admisible.com?subject=Informe%20de%20mi%20empresa&amp;body=Quiero%20el%20informe%20de%20mi%20empresa.%0D%0A%0D%0AEmpresa%3A%20%0D%0AC%C3%A9dula%20jur%C3%ADdica%3A%20">Pedir el informe de mi empresa</a>
+        </div>
+        <p class="menor">Sin costo. Se lo enviamos en dos días hábiles. Solo necesitamos el nombre de la empresa y la cédula jurídica.</p>
+        <p class="menor">O pídalo por WhatsApp al <a class="enlace" href="https://wa.me/50686689746?text=Hola%2C%20quiero%20el%20informe%20de%20mi%20empresa" target="_blank" rel="noopener"><span class="nodec">8668 9746</span><span class="oculto"> (se abre en una pestaña nueva)</span></a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== LO QUE RECIBE =================== -->
+<section class="sec" id="recibe" data-momento="1">
+  <div class="env">
+    <div class="rej enc">
+      <h2 class="seccion-t c1-6">Participe en más licitaciones y no pierda ninguna por un documento o un plazo</h2>
+      <p class="bajada c7-11">Tres cosas, medibles en su propio SICOP a los tres meses.</p>
+    </div>
+
+    <div class="fila rej">
+      <p class="bajada c1-5">Ninguna oferta suya vuelve a quedar fuera por un documento, un formato o un plazo.</p>
+      <p class="c6-13">Cada requisito del cartel, quién lo emite y para cuándo, resuelto antes de la apertura. Las prevenciones de subsanación se contestan el mismo día.</p>
+    </div>
+    <div class="fila rej">
+      <p class="bajada c1-5">No se le escapa un concurso de sus productos, en ninguna institución.</p>
+      <p class="c6-13">Todas las semanas recibe los que puede ganar, con el precio al que se adjudicó la vez anterior y contra cuántos compitió el ganador.</p>
+    </div>
+    <div class="fila rej">
+      <p class="bajada c1-5">Presenta más ofertas con la misma gente.</p>
+      <p class="c6-13">La oferta llega armada y cargada en SICOP. Su equipo pone el precio, revisa y firma.</p>
+    </div>
+  </div>
+</section>
+
+<!-- =================== LA MATRIZ =================== -->
+<section class="sec sec-papel" id="matriz" data-momento="1" aria-labelledby="matriz-t">
+  <div class="env">
+    <div class="rej enc">
+      <h2 class="seccion-t c1-6" id="matriz-t">Así se ve lo que recibe antes de cada apertura</h2>
+      <p class="bajada c7-11">Un concurso real, ya resuelto. La última columna dice cuántas ofertas quedaron fuera por cada requisito. Ese es el detalle que decide una adjudicación.</p>
+    </div>
+
+    <div class="papel">
+      <div class="hoja matriz-hoja">
+        <span class="doblez" aria-hidden="true"></span>
+        <p class="meta"><span class="nodec" translate="no">2025LD-000181-0001102102</span><span>Hospital San Juan de Dios, CCSS · 6 líneas · 4 oferentes</span></p>
         <h3>Matriz de admisibilidad · Lentes para otorrinolaringología</h3>
-        <div class="tablewrap" role="region" aria-label="Matriz de admisibilidad, tabla desplazable"><table role="table"><caption class="oculto">Matriz de admisibilidad del concurso 2025LD-000181-0001102102</caption>
-          <thead role="rowgroup"><tr role="row"><th scope="col" role="columnheader">Requisito del cartel</th><th scope="col" role="columnheader">Lo emite</th><th scope="col" role="columnheader">Conseguirlo toma</th><th scope="col" role="columnheader">Subsanable</th><th scope="col" role="columnheader">Ofertas que quedaron fuera por esto</th></tr></thead>
-          <tbody role="rowgroup">
-            <tr role="row"><td role="cell" class="req">Registro sanitario de equipo y material biomédico, por línea</td><td role="cell">Ministerio de Salud</td><td role="cell" class="n">vigente</td><td role="cell">Sí</td><td role="cell"><span class="v no">1</span></td></tr>
-            <tr role="row"><td role="cell" class="req">Certificado FDA o marcado CE del fabricante</td><td role="cell">Fabricante</td><td role="cell" class="n">10 días</td><td role="cell">Sí</td><td role="cell"><span class="v no">9</span></td></tr>
-            <tr role="row"><td role="cell" class="req">Declaración jurada del artículo 29, registrada en SICOP</td><td role="cell">Representante legal</td><td role="cell" class="n">con la oferta</td><td role="cell">Sí</td><td role="cell"><span class="v ok">Ninguna</span></td></tr>
-            <tr role="row"><td role="cell" class="req">Comprobante de patente municipal del trimestre</td><td role="cell">Municipalidad</td><td role="cell" class="n">5 días</td><td role="cell">Sí</td><td role="cell"><span class="v no">6</span></td></tr>
-            <tr role="row"><td role="cell" class="req">Desglose del precio en el formato del pliego</td><td role="cell">La empresa</td><td role="cell" class="n">con la oferta</td><td role="cell">No</td><td role="cell"><span class="v ok">Ninguna</span></td></tr>
-            <tr role="row"><td role="cell" class="req">Responder la prevención de subsanación dentro del plazo</td><td role="cell">La empresa</td><td role="cell" class="n">2 días hábiles</td><td role="cell">Caduca</td><td role="cell"><span class="v no">10</span></td></tr>
-          </tbody>
-        </table></div>
-        <div class="foot"><span>21 ofertas por partida presentadas</span><span><b>10 quedaron fuera</b> · 1 adjudicatario</span></div>
-        <p class="nota">Una misma oferta puede fallar en más de un requisito. Las 10 excluidas recibieron su prevención el 14 de agosto de 2025 y quedaron fuera; el adjudicatario recibió la suya y la contestó.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="datos" class="col">
-    <p class="tick">Estudio de admisibilidad</p>
-    <div class="body">
-      <h2 class="t">No es mala suerte. Es como funciona el proceso de las compras públicas.</h2>
-      <p>Datos públicos de SICOP: 3.141 concursos resueltos en Costa Rica entre setiembre de 2024 y agosto de 2026. Analizamos el resultado de cada oferta presentada en esos concursos. Las cifras son públicas; ordenarlas y usarlas a favor de su empresa es lo que nadie hace.</p>
-      <div class="figs">
-        <div class="fig fuera"><div class="v2">46,6&nbsp;%</div><div class="l">de las ofertas fueron declaradas «No cumple» en el estudio de admisibilidad.</div></div>
-        <div class="fig"><div class="v2">690 de 969</div><div class="l">empresas que ofertaron quedaron fuera al menos una vez.</div></div>
-        <div class="fig"><div class="v2">42&nbsp;%</div><div class="l">de los concursos se adjudicó con un solo oferente. Hay oportunidad.</div></div>
-      </div>
-      <div class="ticker"><span class="dot"></span><span>Esta semana: 932 concursos publicados en SICOP entre el 4 y el 10 de setiembre de 2026.</span></div>
-    </div>
-  </section>
-
-  <section id="contratar" class="col">
-    <p class="tick">Antes del próximo cartel</p>
-    <div class="body">
-      <h2 class="t">Empiece con una sola oferta</h2>
-      <p>Por oferta o por mes. Sin permanencia. Escoja el próximo concurso que le interese y se lo entregamos listo para firmar. Si quiere seguir, pasamos a un plan mensual con todo el radar. Sin cotizaciones largas ni contratos de un año.</p>
-      <ul class="terms" role="list">
-        <li><b>Por oferta</b><span>Desde US$300 por expediente completo, según el tamaño del cartel. Se paga al entregar.</span></li>
-        <li><b>Por mes</b><span>Radar semanal de sus concursos, matrices, expedientes y vigilancia de plazos. El precio depende de cuántas ofertas presenta al mes; se acuerda en la primera llamada.</span></li>
-        <li><b>Exclusividad</b><span>No atendemos a dos competidores directos en la misma línea de producto y la misma institución sin que ambos lo sepan.</span></li>
-      </ul>
-      <div class="garantia">
-        <div>
-          <p class="g">Garantía: si no es admisible, no se cobra.</p>
-          <p>La garantía dice lo que dice: si una oferta que preparamos queda inadmisible por un requisito que estaba escrito en el cartel, ese expediente no se cobra. Ganar depende de su precio y de su producto; eso no lo prometemos.</p>
+        <div class="tabla-env" data-rotulo="Matriz de admisibilidad, tabla desplazable">
+          <div class="tabla-caja">
+            <table class="tabla-m" role="table">
+              <caption class="oculto">Matriz de admisibilidad del concurso 2025LD-000181-0001102102</caption>
+              <thead role="rowgroup"><tr role="row"><th scope="col" role="columnheader">Requisito del cartel</th><th scope="col" role="columnheader">Lo emite</th><th scope="col" role="columnheader">Conseguirlo toma</th><th scope="col" role="columnheader">Subsanable</th><th scope="col" role="columnheader">Ofertas que quedaron fuera por esto</th></tr></thead>
+              <tbody role="rowgroup">
+                <tr role="row"><td role="cell" class="req">Registro sanitario de equipo y material biomédico, por línea</td><td role="cell" data-k="Lo emite:">Ministerio de Salud</td><td role="cell" data-k="Conseguirlo toma:">vigente</td><td role="cell" data-k="Subsanable:">Sí</td><td role="cell" data-k="Quedaron fuera por esto"><span class="v no">1</span></td></tr>
+                <tr role="row"><td role="cell" class="req">Certificado FDA o marcado CE del fabricante</td><td role="cell" data-k="Lo emite:">Fabricante</td><td role="cell" data-k="Conseguirlo toma:">10 días</td><td role="cell" data-k="Subsanable:">Sí</td><td role="cell" data-k="Quedaron fuera por esto"><span class="v no">9</span></td></tr>
+                <tr role="row"><td role="cell" class="req">Declaración jurada del artículo 29, registrada en SICOP</td><td role="cell" data-k="Lo emite:">Representante legal</td><td role="cell" data-k="Conseguirlo toma:">con la oferta</td><td role="cell" data-k="Subsanable:">Sí</td><td role="cell" data-k="Quedaron fuera por esto"><span class="v ok">Ninguna</span></td></tr>
+                <tr role="row"><td role="cell" class="req">Comprobante de patente municipal del trimestre</td><td role="cell" data-k="Lo emite:">Municipalidad</td><td role="cell" data-k="Conseguirlo toma:">5 días</td><td role="cell" data-k="Subsanable:">Sí</td><td role="cell" data-k="Quedaron fuera por esto"><span class="v no">6</span></td></tr>
+                <tr role="row"><td role="cell" class="req">Desglose del precio en el formato del pliego</td><td role="cell" data-k="Lo emite:">La empresa</td><td role="cell" data-k="Conseguirlo toma:">con la oferta</td><td role="cell" data-k="Subsanable:">No</td><td role="cell" data-k="Quedaron fuera por esto"><span class="v ok">Ninguna</span></td></tr>
+                <tr role="row"><td role="cell" class="req">Responder la prevención de subsanación dentro del plazo</td><td role="cell" data-k="Lo emite:">La empresa</td><td role="cell" data-k="Conseguirlo toma:">2 días hábiles</td><td role="cell" data-k="Subsanable:">Caduca</td><td role="cell" data-k="Quedaron fuera por esto"><span class="v no">10</span></td></tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-        <div class="sello" aria-hidden="true">
-          <svg viewBox="0 0 200 200" fill="currentColor">
-            <defs><path id="anillo" d="M100,100 m-70,0 a70,70 0 1,1 140,0 a70,70 0 1,1 -140,0"/></defs>
-            <circle cx="100" cy="100" r="92" fill="none" stroke="currentColor" stroke-width="3"/>
-            <circle cx="100" cy="100" r="84" fill="none" stroke="currentColor" stroke-width="1"/>
-            <text font-family="Archivo, Arial, sans-serif" font-weight="600" font-size="11.5" letter-spacing="2.4"><textPath href="#anillo" startOffset="0">GARANTÍA · SI NO ES ADMISIBLE, NO SE COBRA ·</textPath></text>
-            <text x="100" y="95" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-weight="800" font-size="31" letter-spacing="-1">CUMPLE</text>
-            <text x="100" y="119" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-weight="600" font-size="10.5" letter-spacing="2.5">ADMISIBLE · CR</text>
+        <p class="pie-obj"><span>21 ofertas por partida presentadas</span><span><span class="rojo">10 quedaron fuera</span> · 1 adjudicatario</span></p>
+        <p class="nota">Una misma oferta puede fallar en más de un requisito. Las 10 excluidas recibieron su prevención el 14 de agosto de 2025 y quedaron fuera; el adjudicatario contestó la suya.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== LOS DATOS =================== -->
+<section class="sec campo-hondo" id="datos" data-momento="2">
+  <div class="env">
+    <div class="rej enc">
+      <h2 class="seccion-t c1-6">No es mala suerte. Es como funciona el proceso de las compras públicas.</h2>
+      <p class="bajada c7-11">Datos públicos de SICOP: 3.141 concursos resueltos en Costa Rica entre setiembre de 2024 y agosto de 2026. Revisamos el resultado de cada oferta presentada. Las cifras están a la vista de todos; ordenarlas a favor de su empresa es lo que nadie hace.</p>
+    </div>
+
+    <div class="fila-d">
+      <div class="rej">
+        <div class="c1-4">
+          <span class="cifra">46,6&#8239;%</span>
+          <p class="rot">de las ofertas fueron declaradas «No cumple» en el estudio de admisibilidad.</p>
+        </div>
+        <div class="c5-12">
+          <svg class="conteo" viewBox="0 0 100 12" preserveAspectRatio="none" shape-rendering="crispEdges" role="img" aria-label="Conteo de cien marcas: 46,6 de cada cien ofertas fueron declaradas No cumple.">
+            <defs>
+              <pattern id="mv1" width="1" height="12" patternUnits="userSpaceOnUse"><rect class="marca-vacia" x=".21" y="0" width=".58" height="12"/></pattern>
+              <pattern id="ml1" width="1" height="12" patternUnits="userSpaceOnUse"><rect class="marca-llena" x=".21" y="0" width=".58" height="12"/></pattern>
+            </defs>
+            <rect x="0" y="0" width="100" height="12" fill="url(#mv1)"></rect>
+            <rect x="0" y="0" width="46.6" height="12" fill="url(#ml1)"></rect>
           </svg>
+          <p class="leyenda"><span>Cada marca, 1&#8239;% de las ofertas</span><span>100&#8239;%</span></p>
         </div>
       </div>
     </div>
-  </section>
 
-  <section id="contacto" class="col">
-    <p class="tick">Esta semana</p>
-    <div class="contact-grid">
-      <div class="body">
-        <h2 class="t">Veinte minutos, con un concurso real de sus productos en pantalla</h2>
-        <p>Hablemos de su próximo cartel. Le enseñamos cómo quedaría su oferta en un cartel abierto esta semana. Si le sirve, lo preparamos. Si no, se lleva la matriz de todos modos.</p>
-        <p>Admisible es una firma costarricense. Respondemos directamente, en horario hábil.</p>
-      </div>
-      <div class="contact">
-        <a class="btn primary" href="https://calendar.app.google/rv9Ajw7rBgRL8d5C7" target="_blank" rel="noopener" aria-label="Agendar 20 minutos, contacto">Agendar 20 minutos</a>
-        <a class="btn" href="mailto:alfaroluisdiego@admisible.com?subject=Informe%20de%20mi%20empresa&amp;body=Quiero%20el%20informe%20de%20mi%20empresa.%0D%0A%0D%0AEmpresa%3A%20%0D%0AC%C3%A9dula%20jur%C3%ADdica%3A%20">Pedir el informe por correo</a>
-        <p class="gar">Garantía: si no es admisible, no se cobra.</p>
-        <p><span class="k">Correo</span><a href="mailto:alfaroluisdiego@admisible.com">alfaroluisdiego@admisible.com</a></p>
-        <p><span class="k">Teléfono y WhatsApp</span><a href="https://wa.me/50686689746?text=Hola%2C%20quiero%20el%20informe%20de%20mi%20empresa" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp al 8668 9746">8668&nbsp;9746</a></p>
-        <p><span class="k">Horario</span>Lunes a viernes, 7:00 a 18:00</p>
+    <div class="fila-d">
+      <div class="rej">
+        <div class="c1-4">
+          <span class="cifra">690</span>
+          <span class="de">de 969</span>
+          <p class="rot">empresas que ofertaron quedaron fuera al menos una vez.</p>
+        </div>
+        <div class="c5-12">
+          <svg class="conteo conteo-rejilla" viewBox="0 0 57 17" preserveAspectRatio="none" shape-rendering="crispEdges" role="img" aria-label="Rejilla de 969 marcas, una por empresa que ofertó: 690 quedaron fuera al menos una vez.">
+            <defs>
+              <pattern id="mv2" width="1" height="1" patternUnits="userSpaceOnUse"><rect class="marca-vacia" x=".16" y=".2" width=".68" height=".52"/></pattern>
+              <pattern id="ml2" width="1" height="1" patternUnits="userSpaceOnUse"><rect class="marca-llena" x=".16" y=".2" width=".68" height=".52"/></pattern>
+            </defs>
+            <rect x="0" y="0" width="57" height="17" fill="url(#mv2)"></rect>
+            <rect x="0" y="0" width="57" height="12" fill="url(#ml2)"></rect>
+            <rect x="0" y="12" width="6" height="1" fill="url(#ml2)"></rect>
+          </svg>
+          <p class="leyenda"><span>Cada marca, una empresa</span><span>969 empresas</span></p>
+        </div>
       </div>
     </div>
-  </section>
-  </main>
 
-  <footer class="col">
+    <div class="fila-d oportunidad">
+      <div class="rej">
+        <div class="c1-4">
+          <span class="cifra">42&#8239;%</span>
+          <p class="rot">de los concursos se adjudicó con un solo oferente. Hay oportunidad.</p>
+        </div>
+        <div class="c5-12">
+          <svg class="conteo" viewBox="0 0 100 12" preserveAspectRatio="none" shape-rendering="crispEdges" role="img" aria-label="Conteo de cien marcas: 42 de cada cien concursos se adjudicaron con un solo oferente.">
+            <defs>
+              <pattern id="mv3" width="1" height="12" patternUnits="userSpaceOnUse"><rect class="marca-vacia" x=".21" y="0" width=".58" height="12"/></pattern>
+              <pattern id="ml3" width="1" height="12" patternUnits="userSpaceOnUse"><rect class="marca-llena" x=".21" y="0" width=".58" height="12"/></pattern>
+            </defs>
+            <rect x="0" y="0" width="100" height="12" fill="url(#mv3)"></rect>
+            <rect x="0" y="0" width="42" height="12" fill="url(#ml3)"></rect>
+          </svg>
+          <p class="leyenda"><span>Cada marca, 1&#8239;% de los concursos</span><span>100&#8239;%</span></p>
+        </div>
+      </div>
+    </div>
+
+    <p class="linea-viva">Esta semana: <strong>932 concursos</strong> publicados en SICOP entre el 4 y el 10 de setiembre de 2026.</p>
+  </div>
+</section>
+
+<!-- =================== LO QUE SE PREGUNTAN =================== -->
+<section class="sec sec-papel" id="preguntas" data-momento="3">
+  <div class="env">
+    <div class="rej">
+      <h2 class="seccion-t c1-4">Lo que nos preguntan antes de empezar</h2>
+      <div class="preguntas-lista c5-12">
+      <details open>
+        <summary>Ya recibimos alertas de SICOP.</summary>
+        <p class="resp">Entonces ya sabe cuántos carteles salen. La pregunta es cuántos de esos terminan en oferta presentada. La alerta avisa; nosotros armamos el expediente.</p>
+      </details>
+      <details>
+        <summary>Tenemos a alguien que se encarga.</summary>
+        <p class="resp">Y la va a seguir necesitando: alguien tiene que poner el precio y firmar. Lo que le quitamos es la lectura de los carteles y la carrera de última hora por documentos.</p>
+      </details>
+      <details>
+        <summary>¿Son abogados?</summary>
+        <p class="resp">No, y para preparar una oferta no hace falta: la firma el representante legal. Para un recurso de objeción o de apelación trabajamos con un abogado de contratación administrativa, que cobra por caso.</p>
+      </details>
+      <details>
+        <summary>¿Qué pasa con nuestros precios y nuestros documentos?</summary>
+        <p class="resp">Firmamos acuerdo de confidencialidad. Sus documentos quedan en una carpeta suya, a la que usted tiene acceso.</p>
+      </details>
+      <details>
+        <summary>Nosotros no perdemos por forma.</summary>
+        <p class="resp">Puede ser. El informe se lo dice con número de concurso y fecha. Si su empresa no quedó fuera ninguna vez el año pasado, se lo decimos igual y hablamos de los concursos que dejó pasar.</p>
+      </details>
+      <details>
+        <summary>¿Y si SICOP cambia con el Sistema Digital Unificado?</summary>
+        <p class="resp">Va a cambiar. Por eso conviene tener a alguien cuyo trabajo es seguirle el paso: la lista de requisitos y sus documentos no dependen de la pantalla.</p>
+      </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== CÓMO SE CONTRATA =================== -->
+<section class="sec" id="contratar" data-momento="4">
+  <div class="env">
+    <div class="rej enc">
+      <h2 class="seccion-t c1-6">Empiece con una sola oferta</h2>
+      <p class="bajada c7-11">Por oferta o por mes. Sin permanencia. Escoja el próximo concurso que le interese y se lo entregamos listo para firmar. Si quiere seguir, pasamos a un plan mensual con el radar completo.</p>
+    </div>
+
+    <div class="fila rej">
+      <p class="rotulo c1-4">Por oferta</p>
+      <p class="c5-12">Desde US$300 por expediente completo, según el tamaño del cartel. Se paga al entregar.</p>
+    </div>
+    <div class="fila rej">
+      <p class="rotulo c1-4">Por mes</p>
+      <p class="c5-12">Radar semanal de sus concursos, matrices, expedientes y vigilancia de plazos. El precio depende de cuántas ofertas presenta al mes; se acuerda en la primera llamada.</p>
+    </div>
+    <div class="fila rej">
+      <p class="rotulo c1-4">Exclusividad</p>
+      <p class="c5-12">No atendemos a dos competidores directos en la misma línea de producto y la misma institución sin que ambos lo sepan.</p>
+    </div>
+
+    <div class="garantia rej">
+      <h3 class="c1-5">Garantía: si no es admisible, no se cobra.</h3>
+      <p class="c6-13">La garantía dice lo que dice: si una oferta que preparamos queda inadmisible por un requisito que estaba escrito en el cartel, ese expediente no se cobra. Ganar depende de su precio y de su producto; eso no lo prometemos.</p>
+    </div>
+  </div>
+</section>
+
+<!-- =================== CONTACTO =================== -->
+<section class="sec sec-papel contacto" id="contacto" data-momento="5">
+  <div class="env rej">
+    <div class="c1-6">
+      <h2 class="seccion-t">Veinte minutos, con un concurso real de sus productos en pantalla</h2>
+      <p class="bajada" style="margin-top:24px">Hablemos de su próximo cartel. Le enseñamos cómo quedaría su oferta en un cartel abierto esta semana. Si le sirve, lo preparamos. Si no, se lleva la matriz de todos modos.</p>
+      <p style="margin-top:20px;color:#565A62">Admisible es una firma costarricense. Respondemos directamente, en horario hábil.</p>
+      <div class="acciones" style="margin-top:32px">
+        <a class="btn btn-p" href="https://calendar.app.google/rv9Ajw7rBgRL8d5C7" target="_blank" rel="noopener">Agendar 20 minutos<span class="oculto"> (se abre en una pestaña nueva)</span></a>
+        <a class="btn btn-s" href="mailto:alfaroluisdiego@admisible.com?subject=Informe%20de%20mi%20empresa&amp;body=Quiero%20el%20informe%20de%20mi%20empresa.%0D%0A%0D%0AEmpresa%3A%20%0D%0AC%C3%A9dula%20jur%C3%ADdica%3A%20">Pedir el informe por correo</a>
+      </div>
+    </div>
+    <div class="c7-12">
+      <dl class="ficha">
+        <div class="linea"><dt>Garantía</dt><dd>Si no es admisible, no se cobra.</dd></div>
+        <div class="linea"><dt>Correo</dt><dd><a class="enlace" href="mailto:alfaroluisdiego@admisible.com">alfaroluisdiego@admisible.com</a></dd></div>
+        <div class="linea"><dt>Teléfono y WhatsApp</dt><dd><a class="enlace" href="https://wa.me/50686689746?text=Hola%2C%20quiero%20el%20informe%20de%20mi%20empresa" target="_blank" rel="noopener"><span class="nodec">8668 9746</span><span class="oculto"> (se abre en una pestaña nueva)</span></a></dd></div>
+        <div class="linea"><dt>Horario</dt><dd>Lunes a viernes, 7:00 a 18:00</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="pie" id="pie" data-momento="5">
+  <div class="env rej">
+    <div class="c1-6">
+      <span class="marca">
+        <svg class="sello" viewBox="0 0 64 64" width="32" height="32" aria-hidden="true" focusable="false">
+          <path class="cuerpo" d="M15 6 H42 L58 22 V49 Q58 58 49 58 H15 Q6 58 6 49 V15 Q6 6 15 6 Z"/>
+          <path class="canto" d="M42 6 V22 H58 Z"/>
+          <path class="visto" d="M20 34 L29 43 L46 25"/>
+        </svg>
+        <b>Admisible</b>
+      </span>
+      <p class="lema">Ofertas listas para firmar</p>
+      <p class="lema">Los datos de esta página salen del expediente electrónico de SICOP.</p>
+    </div>
+    <div class="c7-12 pie-cols">
+      <div>
+        <h2 class="pie-t">Secciones</h2>
+        <ul>
+          <li><a href="#informe">Informe</a></li>
+          <li><a href="#recibe">Qué recibe</a></li>
+          <li><a href="#datos">Los datos</a></li>
+          <li><a href="#preguntas">Preguntas</a></li>
+          <li><a href="#contratar">Contratar</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="pie-t">Contacto</h2>
+        <ul>
+          <li><a href="mailto:alfaroluisdiego@admisible.com">alfaroluisdiego@admisible.com</a></li>
+          <li><a href="tel:+50686689746"><span class="nodec">8668 9746</span></a></li>
+          <li class="horario">Lunes a viernes, 7:00 a 18:00</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="pie-fin">
     <span>© 2026 Admisible · San José, Costa Rica</span>
-    <span class="pie2"><span>Ofertas listas para firmar</span><a href="mailto:alfaroluisdiego@admisible.com">alfaroluisdiego@admisible.com</a></span>
-  </footer>
+    <span>Garantía: si no es admisible, no se cobra.</span>
+  </div>
+</footer>
+
+<div class="cola" aria-hidden="true"></div>
+
+<div class="fija" id="fija">
+  <div class="par">
+    <a class="btn btn-p" href="mailto:alfaroluisdiego@admisible.com?subject=Informe%20de%20mi%20empresa&amp;body=Quiero%20el%20informe%20de%20mi%20empresa.%0D%0A%0D%0AEmpresa%3A%20%0D%0AC%C3%A9dula%20jur%C3%ADdica%3A%20">Pedir el informe</a>
+    <a class="btn btn-s" href="https://calendar.app.google/rv9Ajw7rBgRL8d5C7" target="_blank" rel="noopener">Agendar 20 minutos<span class="oculto"> (se abre en una pestaña nueva)</span></a>
+  </div>
 </div>
+
 <script>
 (function () {
-  var hitos = document.querySelector('.hitos'), perdida = document.querySelector('.hito.perdida'), raf = 0;
-  function draw() {
-    if (raf || !hitos || !perdida) return;
-    raf = requestAnimationFrame(function () { raf = 0; hitos.style.setProperty('--draw', (perdida.offsetTop + 25 - 14) + 'px'); });
-  }
-  draw();
-  window.addEventListener('load', draw);
-  if (document.fonts && document.fonts.ready) { document.fonts.ready.then(draw); }
-  if (hitos && 'ResizeObserver' in window) { new ResizeObserver(draw).observe(hitos); }
+  var d = document, slice = Array.prototype.slice;
 
-  var tw = document.querySelector('.tablewrap');
-  function tabTabla() { if (tw) { if (tw.scrollWidth > tw.clientWidth + 1) tw.setAttribute('tabindex', '0'); else tw.removeAttribute('tabindex'); } }
-  tabTabla();
-  window.addEventListener('resize', tabTabla);
+  /* --- riel de hitos: un solo momento orquestado --- */
+  var riel = d.getElementById('riel');
+  var lis = riel ? slice.call(riel.querySelectorAll('li')) : [];
+  var fill = d.querySelector('.riel-linea i');
+  var actual = d.getElementById('riel-actual');
+  var secs = slice.call(d.querySelectorAll('[data-momento]'));
+  var ultimo = -1;
 
-  var rail = document.querySelector('.rail');
-  if (!rail || !('IntersectionObserver' in window)) return;
-  var links = Array.prototype.slice.call(rail.querySelectorAll('a[href^="#"]'));
-  var marker = rail.querySelector('.marker');
-  var ol = rail.querySelector('ol');
-  var items = links.map(function (a) { return document.getElementById(a.getAttribute('href').slice(1)); });
-  function activate(a) {
-    links.forEach(function (l) { if (l === a) l.setAttribute('aria-current', 'location'); else l.removeAttribute('aria-current'); });
-    var li = a.parentNode, y = li.offsetTop + 5;
-    marker.style.setProperty('--y', y + 'px');
-    ol.style.setProperty('--fill', Math.max(0, y + 6 - 8 + 4) + 'px');
+  function marca(i) {
+    if (i === ultimo || !lis.length) return;
+    ultimo = i;
+    for (var p = 0; p < lis.length; p++) {
+      var viva = (p === i);
+      lis[p].classList.toggle('viva', viva);
+      if (viva) lis[p].setAttribute('aria-current', 'true'); else lis[p].removeAttribute('aria-current');
+    }
+    if (actual && lis[i]) actual.textContent = lis[i].textContent;
+    if (fill) fill.style.transform = 'scaleX(' + ((i + 1) / lis.length).toFixed(4) + ')';
   }
-  var visible = {};
-  var io = new IntersectionObserver(function (entries) {
-    entries.forEach(function (e) { visible[e.target.id] = e.isIntersecting; });
-    for (var i = 0; i < items.length; i++) { if (items[i] && visible[items[i].id]) { activate(links[i]); return; } }
-  }, { rootMargin: '-30% 0px -55% 0px', threshold: 0 });
-  items.forEach(function (el) { if (el) io.observe(el); });
-  activate(links[0]);
+  marca(0);
+
+  if (secs.length && 'IntersectionObserver' in window) {
+    var vis = [];
+    var io = new IntersectionObserver(function (entradas) {
+      entradas.forEach(function (e) { vis[secs.indexOf(e.target)] = e.isIntersecting; });
+      for (var s = 0; s < secs.length; s++) {
+        if (vis[s]) { marca(+secs[s].getAttribute('data-momento')); return; }
+      }
+    }, { rootMargin: '-28% 0px -55% 0px', threshold: 0 });
+    secs.forEach(function (el) { io.observe(el); });
+  }
+
+  /* --- barra fija de celular --- */
+  var fija = d.getElementById('fija');
+  var inicio = d.getElementById('inicio');
+  var contacto = d.getElementById('contacto');
+  if (fija && inicio && contacto && 'IntersectionObserver' in window) {
+    var paso = false, cierre = false;
+    function pinta() { fija.classList.toggle('vista', paso && !cierre); }
+    new IntersectionObserver(function (e) { paso = !e[0].isIntersecting; pinta(); }, { threshold: 0 }).observe(inicio);
+    new IntersectionObserver(function (e) { cierre = e[0].isIntersecting; pinta(); }, { threshold: 0 }).observe(contacto);
+  }
+
+  /* --- region desplazable solo cuando la tabla de verdad desborda --- */
+  var envolturas = slice.call(d.querySelectorAll('.tabla-env'));
+  function regiones() {
+    envolturas.forEach(function (tw) {
+      if (tw.scrollWidth > tw.clientWidth + 1) {
+        tw.setAttribute('tabindex', '0');
+        tw.setAttribute('role', 'region');
+        tw.setAttribute('aria-label', tw.getAttribute('data-rotulo'));
+      } else {
+        tw.removeAttribute('tabindex');
+        tw.removeAttribute('role');
+        tw.removeAttribute('aria-label');
+      }
+    });
+  }
+  regiones();
+  window.addEventListener('resize', regiones);
+  if (d.fonts && d.fonts.ready) { d.fonts.ready.then(regiones); }
+
+  /* --- preguntas: como estan en pantalla; al imprimir salen las seis abiertas --- */
+  var pregs = slice.call(d.querySelectorAll('#preguntas details'));
+  var previas = null;
+  window.addEventListener('beforeprint', function () {
+    previas = pregs.map(function (x) { return x.open; });
+    pregs.forEach(function (x) { x.open = true; });
+  });
+  window.addEventListener('afterprint', function () {
+    if (!previas) return;
+    pregs.forEach(function (x, i) { x.open = previas[i]; });
+    previas = null;
+  });
 })();
 </script>
 </body>
